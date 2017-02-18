@@ -1,0 +1,56 @@
+@import "../config/mixin";
+@import "../config/variable";
+
+.page-container {
+  margin-top: 30px;
+}
+.pagination {
+  font-size: @smallFontSize;
+  .clearfix();
+}
+.pagination>li {
+  float: left;
+  margin-left: 5px;
+}
+.pagination>.active>a {
+  border: 1px solid @colorBlueMain;
+  background-color: @colorBlueMain;
+  &:hover {
+    color: @fontColorWhite;
+  }
+}
+.pagination>li>a {
+  .size(24px, 24px);
+  padding: 0;
+  border: 1px solid @borderColor;
+  border-radius: 2px;
+  background-color: @bgWhite;
+  text-align: center;
+  line-height: 24px;
+  color: @fontColorLight;
+  &:hover {
+    background-color: @colorBlueMain;
+    border: 1px solid @colorBlueMain;
+    color: @fontColorWhite;
+  }
+}
+.pagination>.disabled>a {
+  .size(60px, 24px);
+  border: 1px solid @borderColor;
+  border-radius: 2px;
+  line-height: 23px;
+  color: @fontColorLight;
+}
+.pagination>li:first-child>a, .pagination>li:first-child>span {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.pagination>li:last-child>a, .pagination>li:last-child>span {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.pagination .pagination-next a,  .pagination .pagination-prev a{
+  .size(60px, 24px);
+  line-height: 23px;
+}

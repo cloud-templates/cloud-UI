@@ -1,0 +1,197 @@
+@import "../config/mixin";
+@import "../config/variable";
+
+.@{module-name}-form {
+  //label基本样式
+  .form-label {
+    margin-right: 10px;
+    margin-bottom: 0;
+    font-size: @fontSize;
+    font-weight: 100;
+    text-align: right;
+    line-height: 36px;
+    color: @fontColorMain;
+  }
+
+  //输入框基本样式
+  .input-base {
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 2px;
+    border: 1px solid @borderColor;
+    font-size: @fontSize;
+    color: @fontColorDark;
+    .word-break();
+    &:hover {
+      border-color: @colorBlueLight;
+    }
+    &:active {
+      border-color: @colorBlueDark;
+    }
+  }
+
+  //常规输入框和下拉选择框
+  .form-input, .form-select {
+    .size(190px, 36px);
+    .input-base();
+  }
+
+  //大尺寸输入框
+  .form-input-big {
+    .size(300px, 36px);
+    .input-base();
+  }
+
+  //多行文本输入框
+  .form-textarea {
+    font-size: @fontSize;
+    .clearfix();
+    .textarea-label, .textarea-block {
+      float: left;
+    }
+    .textarea-label {
+      margin-right: 10px;
+      margin-bottom: 0;
+      font-weight: 100;
+      text-align: right;
+      line-height: 100px;
+      color: @fontColorMain;
+    }
+    .textarea-input {
+      padding-top: 6px;
+      padding-bottom: 6px;
+      .input-base();
+      .size(300px, 100px);
+    }
+  }
+
+  //标记星号
+  .required-item {
+    margin-right: 4px;
+    vertical-align: sub;
+    color: #f00;
+  }
+
+  .form-block {
+    .clearfix();
+    .form-label, .input-block {
+      float: left;
+    }
+  }
+
+  //提示信息
+  .error-tips {
+    display: none;
+    font-size: @fontSize;
+    color: @colorRedMain;
+  }
+
+  .input-block, .textarea-block {
+    &.error {
+      position: relative;
+      .form-input,
+      .form-input-big {
+        padding-right: 30px;
+        border-color: @colorRedMain;
+      }
+      .form-input ~ .error-tips {
+        display: block;
+      }
+      .form-input ~ .icon {
+        left: 164px;
+      }
+      .form-input-big ~ .error-tips{
+        display: inline-block;
+      }
+      .form-input-big ~ .icon{
+        left: 274px;
+      }
+      .icon {
+        position: absolute;
+        top: 10px;
+        font-size: 16px;
+        line-height: 16px;
+        color: #9fa4b4;
+      }
+    }
+  }
+
+  //注解
+  .form-tips {
+    font-size: @fontSize;
+    color: @colorRedMain;
+  }
+
+  .form-group {
+    margin-bottom: 0;
+  }
+}
+
+
+//单选按钮组
+.radio-group {
+  .clearfix();
+  .radio-box {
+    display: inline-block;
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .radio-box {
+    float: left;
+  }
+  .form-radio {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+}
+
+
+//搜索框
+.search-box {
+  position: relative;
+  width: 300px;
+  border: 1px solid @borderColor;
+  border-radius: 0 2px 2px 0;
+  .icon-search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 0 2px 2px 0;
+    background-color: @borderColor;
+    font-size: 20px;
+    line-height: 34px;
+    color: @fontNavMain;
+  }
+  .search-input {
+    width: 100%;
+    padding: 5px 44px 5px 10px;
+    line-height: 24px;
+    color: @colorGrayDark;
+    &:focus {
+      border: none;
+    }
+  }
+}
+
+//日期选择框
+.calendar-box {
+  position: relative;
+  .form-input-normal {
+    border-radius: 2px 2px 0 0;
+  }
+  .calendar-label {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    padding: 0 5px;
+    margin-bottom: 0;
+    font-weight: 100;
+    color: @colorGrayLight;
+    cursor: pointer;
+  }
+}
+

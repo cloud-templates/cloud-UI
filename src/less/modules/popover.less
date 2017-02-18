@@ -1,0 +1,135 @@
+@import "../config/mixin";
+@import "../config/variable";
+
+.cloud-example {
+  overflow: hidden;
+  padding: 5px 15px 15px;
+  margin: 0px -15px 15px;
+  padding-bottom: 10px;
+  .popover.bottom, .popover.top, .popover.left, .popover.right {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 10px 20px;
+    z-index: 0;
+  }
+}
+
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  display: none;
+  max-width: 276px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: left;
+  white-space: normal;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #e2e4ea;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.popover.bottom {
+  margin-top: 10px;
+  border-bottom: 2px solid @blueDefaultColor;
+  z-index: 0;
+}
+
+.popover.top {
+  margin-top: -10px;
+  //border-top: 2px solid @blueDefaultColor;
+}
+
+.popover.left {
+  margin-top: -10px;
+  //border-bottom: 2px solid @blueDefaultColor;
+}
+
+.popover.right {
+  margin-top: 10px;
+  //border-bottom: 2px solid @blueDefaultColor;
+}
+
+.popover.bottom>.arrow {
+  top: -6px;
+  left: 50%;
+  margin-left: -6px;
+  border-top-width: 0;
+  border-bottom-color: #999;
+  border-bottom-color: rgba(0,0,0,.25);
+}
+
+.popover.top>.arrow {
+  bottom: -6px;
+  left: 50%;
+  margin-left: -6px;
+  border-top-color: #999;
+  border-top-color: rgba(0,0,0,.25);
+  border-bottom-width: 0;
+}
+
+.popover.right>.arrow {
+  top: 50%;
+  left: -6px;
+  margin-top: -11px;
+  border-right-color: #999;
+  border-right-color: rgba(0,0,0,.25);
+  border-left-width: 0;
+}
+
+.popover.left>.arrow {
+  top: 50%;
+  right: -6px;
+  margin-top: -6px;
+  border-left-color: #999;
+  border-left-color: rgba(0,0,0,.25);
+  border-right-width: 0;
+}
+
+.popover>.arrow {
+  border-width: 6px;
+}
+
+.popover>.arrow:after {
+  content: "";
+  border-width: 5px;
+}
+
+.popover.bottom>.arrow:after {
+  top: 1px;
+  margin-left: -5px;
+  content: " ";
+  border-top-width: 0;
+  border-bottom-color: #fff;
+}
+
+.popover.top>.arrow:after {
+  bottom: 1px;
+  margin-left: -5px;
+  content: " ";
+  border-top-color: #fff;
+  border-bottom-width: 0;
+}
+
+.popover.right>.arrow:after {
+  bottom: -5px;
+  left: 1px;
+  content: " ";
+  border-right-color: #fff;
+  border-left-width: 0;
+}
+
+.popover.left>.arrow:after {
+  right: 1px;
+  bottom: -5px;
+  content: " ";
+  border-left-color: #fff;
+  border-right-width: 0;
+}
