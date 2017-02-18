@@ -7,11 +7,9 @@ Cloud-UI
 
 ## 运行
 1. 安装 `nodejs`
-1. 全局安装 `npm`: npm install gulp -g
-1. 在项目中安装 `npm`: npm install gulp --save-dev
-1. 全局安装 `gulp`: npm install gulp -g
-1. 安装 `gulpfile` 文件中的插件: npm install gulp-util gulp-watch-path stream-combiner2 gulp-sourcemaps gulp-minify-css gulp-autoprefixer gulp-less gulp-rename gulp-clean --save-dev
-1. 运行 `gulp`
+2. 全局安装 `npm`: npm install gulp -g
+3. 在项目中安装 `npm`: npm install
+4. 运行 `gulp build`
 
 
 ## 目录结构及文件
