@@ -1,5 +1,5 @@
 {
-  "name": "cloud-ui",
+  "name": "cloud-broker-ui",
   "version": "1.0.1",
   "description": "a html and css framework for the manage business.",
   "main": "gulpfile.js",
