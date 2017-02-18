@@ -56,8 +56,5 @@ dll
 # Dev
 dev
 
-# Bulid
-dist
-
 .project
 .happypack
