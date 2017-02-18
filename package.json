@@ -1,17 +1,12 @@
 {
   "name": "cloud-ui",
   "version": "1.0.0",
-  "description": "a html and css framework for the manage business of yunji.",
+  "description": "a html and css framework for the manage business.",
   "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "ui",
     "framework"
   ],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
