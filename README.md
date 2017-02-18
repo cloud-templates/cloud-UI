@@ -1,4 +1,4 @@
-Cloud-UI
+cloud-ui [![Build Status](https://travis-ci.org/cloud-templates/cloud-ui.svg?branch=master)](https://travis-ci.org/cloud-templates/cloud-ui)
 ===
 
 ## 环境依赖:
