@@ -2,7 +2,7 @@
 @import "../config/mixin";
 
 //用ul模拟table
-.list-table {
+.@{module-name}-list-table {
   .list-thead, .list-tbody {
     width: 100%;
     font-size: @fontSize;
@@ -10,6 +10,7 @@
       .flex-item(1);
     }
   }
+
   .list-thead {
     .flex-box();
     height: 36px;
@@ -23,6 +24,7 @@
       padding: 0 20px;
     }
   }
+
   .list-tbody {
     background-color: @bgWhite;
     color: @fontTableMain;
@@ -49,6 +51,7 @@
       .text-overflow;
     }
   }
+
   &.list-center {
     .list-td {
       text-align: center;

@@ -1,7 +1,7 @@
 @import "../config/variable";
 @import "../config/mixin";
 
-.ui-table {
+.@{module-name}-table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
@@ -10,6 +10,7 @@
   font-size: @fontSize;
   color: @fontTableMain;
   table-layout: fixed;
+
   th {
     height: 36px;
     padding: 0 20px;
@@ -18,6 +19,7 @@
     line-height: 35px;
     color: @fontColorMain;
   }
+
   tr {
     border-bottom: 1px solid @borderColor;
     line-height: 24px;
@@ -26,6 +28,7 @@
       background-color: @bgTableList;
     }
   }
+
   td {
     padding: 7px 20px;
     border-right: 1px solid @borderColor;
@@ -37,6 +40,7 @@
   .table-btn {
     margin-right: 5px;
   }
+
   &.table-center {
     th {
       text-align: center;
