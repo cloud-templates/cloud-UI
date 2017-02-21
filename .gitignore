@@ -58,3 +58,10 @@ dev
 
 .project
 .happypack
+
+# git
+.git
+
+# other
+*.yml
+*.lock
