@@ -196,15 +196,16 @@
   //高亮源码样式
   .pre {
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
     border: 1px solid #ddd;
     border-radius: 0;
     background-color: #f8f8f8;
     font-size: 14px;
     line-height: 1.5;
     white-space: nowrap;
-    .hljs,
-    .hljs-subst {
+    word-break: break-word;
+    .hljs {
+      padding: 0;
       background-color: #f8f8f8;
       color: #999;
       &:first-child {
@@ -212,6 +213,9 @@
         margin-left: -180px;
         padding-right: 45px;
       }
+    }
+    .hljs-subst {
+      color: #999;
     }
     .hljs-keyword, .hljs-attribute, .hljs-selector-tag, .hljs-meta-keyword, .hljs-doctag, .hljs-name {
       font-weight: 100;
@@ -241,7 +245,7 @@
   }
 
   .scroll-content {
-    width: 1400px;
+    width: 1200px;
     height: 800px;
   }
 
