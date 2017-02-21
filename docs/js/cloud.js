@@ -1,28 +1,28 @@
-// 项目: cloud-ui
-// 版本: v1.0.0
-// 作者: kezh,wyt
-// 日期: 2017/2/6.
-// 说明: 云纪管理端UI框架JS插件
+/** 项目: cloud-ui
+ * 版本: v1.0.0
+ * 作者: kezh,wyt
+ * 日期: 2017/2/6.
+ * 说明: 云纪管理端UI框架JS插件
+ */
 
-//tab切换
-//说明：每一个tab标签均需要单独声明
+/**
+ * tab切换
+ */
 $('#myTab a').click(function (e) {
     e.preventDefault();
     $(this).tab('show')
 });
 
-$('#myTab2 a').click(function (e) {
-    e.preventDefault();
-    $(this).tab('show')
-});
-
-
-//提示框
+/**
+ * 弹出框
+ */
 $(function () {
     $('[data-toggle="popover"]').popover()
-})
+});
 
-//下拉框
+/**
+ * 下拉框
+ */
 var app = angular.module('cloudApp', ['ui.bootstrap']);
 
 app.controller('DropdownController', function($scope) {
@@ -34,10 +34,12 @@ app.controller('DropdownController', function($scope) {
         '第五项'
     ];
 
-    //var sDefaultText = $scope.items[0];
-    //
-    //$(".js-select-text").text(sDefaultText);
+    //默认显示第一项的内容
+    var sDefaultText = $scope.items[0];
 
+    $(".js-select-text").text(sDefaultText);
+
+    //显示为选中内容
     $scope.chooseItem = function(){
         var sText = this.item;
 
@@ -45,22 +47,28 @@ app.controller('DropdownController', function($scope) {
     };
 });
 
-//分页
+/**
+ * 分页
+ */
 app.controller('PaginationController', function($scope) {
     $scope.maxSize = 5;
     $scope.totalItems = 120;
     $scope.currentPage = 1;
 });
 
-//日期选择
+/**
+ * 日历
+ */
 app.controller('DatepickerPopupController', function($scope) {
     $scope.dateOptions = {
         startingDay: 1,
         showWeeks: false
     };
+
     $scope.popupStartTime = {
         opened: false
     };
+
     $scope.openStartTime = function() {
         $scope.popupStartTime.opened = true;
     };
@@ -68,14 +76,18 @@ app.controller('DatepickerPopupController', function($scope) {
     $scope.popupEndTime = {
         opened: false
     };
+
     $scope.openEndTime = function() {
         $scope.popupEndTime.opened = true;
     };
 });
 
-//图表
+/**
+ * 图表
+ */
 //曲线图
 var ctx = $(".chart-area").get(0).getContext("2d");
+
 window.myChart = new Chart(ctx, {
     type: 'line',
     data: {
@@ -89,19 +101,18 @@ window.myChart = new Chart(ctx, {
         datasets : [{
             label: "曲线1",
             fill: false,
-            lineTension: 0,//定义曲线弧度
+            lineTension: 0,
             borderColor: "rgba(75,192,192,1)",
             data: [67, 52, 27, 55, 80, 63],
             spanGaps: false
         },{
             label: "曲线2",
             fill: true,
-            lineTension: 0.4,//定义曲线弧度
+            lineTension: 0.4,
             backgroundColor: "rgba(249, 79, 118,0.4)",
             borderColor: "rgba(249, 79, 118,1)",
             data: [28, 60, 42, 18, 96, 100]
-        }
-        ]
+        }]
     },
     options:{
         responsive: true,
