@@ -182,23 +182,54 @@ canvas {
   background: #fff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   z-index: 10;
-  /*.clearfix();*/
+}
+.cloud-doc .nav-bar:before,
+.cloud-doc .nav-bar:after {
+  content: " ";
+  display: table;
+}
+.cloud-doc .nav-bar:after {
+  clear: both;
 }
 .cloud-doc .nav-bar-left {
   float: left;
+}
+.cloud-doc .nav-bar-left:before,
+.cloud-doc .nav-bar-left:after {
+  content: " ";
+  display: table;
+}
+.cloud-doc .nav-bar-left:after {
+  clear: both;
+}
+.cloud-doc .nav-bar-left .svg-logo {
+  float: left;
+  height: 40px;
+  margin-top: 10px;
+  fill: #42b8f1;
+  vertical-align: text-bottom;
+}
+.cloud-doc .nav-bar-left .svg-logo svg {
+  width: 40px;
+  margin-right: 5px;
+}
+.cloud-doc .nav-bar-left h1 {
+  float: left;
+  font-family: "Helvetica", sans-serif;
   font-size: 24px;
   line-height: 60px;
   color: #606060;
 }
-.cloud-doc .nav-bar-left .svg-logo {
-  float: left;
-  margin-top: 8px;
-  fill: #42b8f1;
-  vertical-align: text-bottom;
-}
 .cloud-doc .nav-bar-right {
   float: right;
-  /*.clearfix();*/
+}
+.cloud-doc .nav-bar-right:before,
+.cloud-doc .nav-bar-right:after {
+  content: " ";
+  display: table;
+}
+.cloud-doc .nav-bar-right:after {
+  clear: both;
 }
 .cloud-doc .nav-bar-right li {
   float: left;
@@ -256,8 +287,8 @@ canvas {
 }
 .cloud-doc .logo-box svg {
   display: block;
-  width: 260px;
-  height: 260px;
+  width: 200px;
+  height: 200px;
   margin: 0 auto;
   fill: #00c0ff;
 }
@@ -266,9 +297,9 @@ canvas {
 }
 .cloud-doc .cu-title {
   margin-bottom: 15px;
-  font-family: "Helvetica,Arial", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 56px;
-  color: #5d5d5d;
+  color: #606060;
 }
 .cloud-doc .cu-describe {
   font-size: 18px;
@@ -276,7 +307,7 @@ canvas {
 }
 .cloud-doc .cu-link {
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: -80px;
 }
 .cloud-doc .cu-link-item {
   display: inline-block;
@@ -329,46 +360,52 @@ canvas {
 }
 .cloud-doc .pre {
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
   border: 1px solid #ddd;
   border-radius: 0;
   background-color: #f8f8f8;
   font-size: 14px;
   line-height: 1.5;
-  color: #666;
   white-space: nowrap;
+  word-break: break-word;
 }
-.cloud-doc .pre .code:first-child {
+.cloud-doc .pre .hljs {
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #999;
+}
+.cloud-doc .pre .hljs:first-child {
   display: inline-block;
   margin-left: -180px;
   padding-right: 45px;
 }
-.cloud-doc .pre .c {
+.cloud-doc .pre .hljs-subst {
   color: #999;
 }
-.cloud-doc .pre .cp {
-  color: #099;
+.cloud-doc .pre .hljs-keyword,
+.cloud-doc .pre .hljs-attribute,
+.cloud-doc .pre .hljs-selector-tag,
+.cloud-doc .pre .hljs-meta-keyword,
+.cloud-doc .pre .hljs-doctag,
+.cloud-doc .pre .hljs-name {
+  font-weight: 100;
+  color: #069;
 }
-.cloud-doc .pre .nt {
-  color: #2f6f9f;
-}
-.cloud-doc .pre .na {
+.cloud-doc .pre .hljs-attr {
   color: #4f9fcf;
 }
-.cloud-doc .pre .s {
+.cloud-doc .pre .hljs-type,
+.cloud-doc .pre .hljs-string,
+.cloud-doc .pre .hljs-number,
+.cloud-doc .pre .hljs-selector-id,
+.cloud-doc .pre .hljs-selector-class,
+.cloud-doc .pre .hljs-quote,
+.cloud-doc .pre .hljs-template-tag,
+.cloud-doc .pre .hljs-deletion {
   color: #d44950;
 }
-.cloud-doc .pre .s1 {
-  color: #C30;
-}
-.cloud-doc .pre .kd {
-  color: #069;
-}
-.cloud-doc .pre .k {
-  color: #069;
-}
-.cloud-doc .pre .mi {
-  color: #F60;
+.cloud-doc .pre .hljs-comment {
+  color: #999;
 }
 .cloud-doc .docs-table td {
   padding: 15px 0 10px;
@@ -379,11 +416,64 @@ canvas {
   border: 1px solid #e2e4ea;
 }
 .cloud-doc .scroll-content {
-  width: 1400px;
+  width: 1200px;
   height: 800px;
 }
 .cloud-doc .sub-menu-bar {
   height: 400px;
+}
+.cloud-doc .form-group {
+  margin-bottom: 20px;
+}
+.cloud-doc .form-group:before,
+.cloud-doc .form-group:after {
+  content: " ";
+  display: table;
+}
+.cloud-doc .form-group:after {
+  clear: both;
+}
+.cloud-doc .form-group .form-label,
+.cloud-doc .form-group .textarea-label {
+  width: 84px;
+}
+.cloud-doc .form-group .form-block {
+  float: left;
+  margin-right: 20px;
+}
+.cloud-doc .form-group .radio-group {
+  width: 185px;
+  margin-left: 5px;
+}
+.cloud-doc .form-group .radio-box {
+  margin-top: 4px;
+}
+.cloud-doc .popover-example:before,
+.cloud-doc .popover-example:after {
+  content: " ";
+  display: table;
+}
+.cloud-doc .popover-example:after {
+  clear: both;
+}
+.cloud-doc .popover-example .popover {
+  position: relative;
+  float: left;
+  display: block;
+  margin: 20px;
+  z-index: 0;
+}
+.cloud-doc .content dl {
+  overflow: hidden;
+}
+.cloud-doc .content dl dt,
+.cloud-doc .content dl dd {
+  float: left;
+}
+.cloud-doc .content dl dt {
+  width: 60px;
+  margin-right: 10px;
+  text-align: right;
 }
 
 /*# sourceMappingURL=cloud-doc.css.map */
