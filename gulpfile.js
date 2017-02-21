@@ -74,27 +74,11 @@ gulp.task('minifyLess', function () {
  */
 
 gulp.task('watchLess', function () {
-    gulp.watch('src/less/**/*.less', ['lessCss']);
+    gulp.watch('src/less/**/*.less', ['lessCss', 'minifyLess']);
 });
 
 gulp.task('watchDocsLess', function () {
-    gulp.watch('docs/less/cloud-doc.less', function (event) {
-        var paths = watchPath(event, 'docs/less/', 'docs/css/');
-
-        gutil.log(gutil.colors.green(event.type) + ' ' + paths.srcPath);
-        gutil.log('Dist ' + paths.distPath)
-        var combined = combiner.obj([
-            gulp.src(paths.srcPath),
-            sourcemaps.init(),
-            less(),
-            autoprefixer({
-                browsers: 'last 2 versions'
-            }),
-            sourcemaps.write('./'),
-            gulp.dest(paths.distDir)
-        ]);
-        combined.on('error', handleError)
-    })
+    gulp.watch('docs/less/cloud-doc.less', ['docsLessCss'])
 });
 
 gulp.task('watchCopy', function () {
@@ -118,4 +102,4 @@ gulp.task('copy', function () {
 gulp.task('watch', ['watchDocsLess', 'watchLess', 'watchCopy']);
 
 // build
-gulp.task('build', ['clean', 'lessCss', 'minifyLess', 'copy']);
+gulp.task('build', ['clean', 'docsLessCss', 'lessCss', 'minifyLess', 'copy']);
