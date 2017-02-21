@@ -1,7 +1,7 @@
 @import "../config/variable";
 @import "../config/mixin";
 
-//  单选框
+//单选按鈕
 .form-radio {
   position: relative;
   display: inline-block;
@@ -20,6 +20,8 @@
   input {
     display: none;
   }
+
+  //选中样式为圆点
   .radio-input-normal[type="radio"] + .radio-label-normal {
     border: 1px solid @borderColor;
     font-weight: 100;
@@ -39,7 +41,7 @@
     .size(6px, 6px);
   }
 
-  //
+  //选中样式为勾
   .radio-input-check[type="radio"] + .radio-label-check {
     border: 1px solid @borderColor;
     font-weight: 100;
@@ -59,5 +61,24 @@
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
     .size(5px, 9px);
+  }
+}
+
+//单选按钮的使用
+.radio-group {
+  .clearfix();
+  .radio-box {
+    display: inline-block;
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .radio-box {
+    float: left;
+  }
+  .form-radio {
+    margin-right: 10px;
+    vertical-align: middle;
   }
 }
