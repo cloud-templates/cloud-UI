@@ -5,23 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
     <title>cloudUI样式使用说明</title>
+    <!--Bootstrap 核心 CSS 文件-->
     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--Cloud-UI 核心 CSS 文件-->
     <link rel="stylesheet" href="../dist/css/cloud-ui.min.css">
     <link rel="stylesheet" href="css/cloud-doc.css">
-    <link rel="stylesheet" href="css/default.css">
+    <link href="https://cdn.bootcss.com/highlight.js/9.9.0/styles/default.min.css" rel="stylesheet">
 </head>
 <body class="cloud-doc">
     <nav class="nav-bar">
         <a class="nav-bar-left" href="start.html">
-                <span>
-                    <?xml version="1.0" standalone="no"?>
-                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                    <svg class="svg-logo" t="1484389293776" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1280" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40">
-                        <defs><style type="text/css"></style></defs>
-                        <path d="M769.877767 823.601854l-515.746324 0c-106.647949 0-193.356776-86.773296-193.356776-193.421244 0-106.631576 86.708827-193.356776 193.356776-193.356776 7.14677 0 14.278191 0.400113 21.537526 1.231037 0-0.415462 0-0.831948 0-1.231037 0-130.37535 105.97666-236.431827 236.335636-236.431827 130.37535 0 236.431827 106.056478 236.431827 236.431827 0 0.400113 0 0.815575 0 1.231037 7.179516-0.831948 14.309914-1.231037 21.441335-1.231037 106.663298 0 193.373149 86.7252 193.373149 193.356776 0 32.825616-8.442276 65.395406-24.431435 94.03263-5.78782 10.377348-18.851347 14.07046-29.212322 8.346085-10.360975-5.835915-14.102183-18.914792-8.266267-29.275767 12.375865-22.288632 19.010983-47.567365 19.010983-73.102948 0-95.79067-91.202165-171.70771-189.791577-145.037281-6.92369 1.902326-14.406105 0.176009-19.778462-4.52506-5.40408-4.749164-8.058536-11.879562-7.163143-18.947538 1.24741-9.449209 1.838881-17.364483 1.838881-24.846898 0-106.647949-86.789669-193.452967-193.452967-193.452967-106.647949 0-193.356776 86.805018-193.356776 193.452967 0 7.483438 0.511653 15.397688 1.759063 24.846898 0.87902 7.066953-1.759063 14.198374-7.179516 18.947538-5.372358 4.701069-12.791327 6.460132-19.763113 4.52506-98.509594-26.557866-189.791577 49.246611-189.791577 145.037281 0 82.935897 67.521836 150.474107 150.457734 150.474107l515.746324 0c11.879562 0 21.537526 9.561773 21.537526 21.441335S781.757329 823.601854 769.877767 823.601854L769.877767 823.601854z" p-id="1281"></path>
-                    </svg>
-                </span>
-            <span>Cloud-UI</span>
+            <div class="svg-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><defs></defs><title>云纪管理端UI框架Cloud-broker-UI</title><path class="cls-1" d="M17.87,26l1.4-1.3h4.1c3.63.16,5-1.82,5.65-4.22a6,6,0,0,0-2.49-6.89,2.16,2.16,0,0,0-3.16.41l-6.11,9H14.6s-4.06-6.24-4.23-6.52c1,0,1.88,0,2.76,0L16,20.64l3.83-5.83a6.63,6.63,0,0,1,3.68-3A6.31,6.31,0,0,1,30.34,14a7.85,7.85,0,0,1,1.54,6.46A6.73,6.73,0,0,1,26.07,26Z"/><path class="cls-1" d="M.32,16.37c.87-3.14,4.06-5,7.31-5a8.18,8.18,0,0,1,6.63-5.31c6.49-.73,9,3.53,9,3.53l-1.65,1a7.23,7.23,0,0,0-5.51-2.52C10.79,7.8,8.8,12.66,8.8,12.66A6,6,0,0,0,6.94,24.42a11.64,11.64,0,0,0,1.88.27h3.93L14.15,26H6c-.14-.07-4.21,0-5.62-5A8.46,8.46,0,0,1,.32,16.37Z"/><circle class="cls-2" cx="16.04" cy="12.77" r="1.82"/><polygon class="cls-1" points="16.71 15.23 15.37 15.23 14.89 17.85 16.03 19.27 17.18 17.85 16.71 15.23"/></svg>
+            </div>
+            <h1>Cloud-UI</h1>
         </a>
         <ul class="nav-bar-right">
             <li class="active"><a href="style.html">样式</a></li>
@@ -55,54 +52,46 @@
                 <div class="docs-example-box">
                     <table class="docs-table" width="50%" cellpadding="0" cellspacing="0">
                         <thead>
-                            <tr>
-                                <th>向上的三角形</th>
-                                <th>向下的三角形</th>
-                                <th>向左的三角形</th>
-                                <th>向右的三角形</th>
-                            </tr>
+                        <tr>
+                            <th>向上的三角形</th>
+                            <th>向下的三角形</th>
+                            <th>向左的三角形</th>
+                            <th>向右的三角形</th>
+                        </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>
-                                    <i class="triangle-upward"></i>
-                                </td>
-                                <td>
-                                    <i class="triangle-downward"></i>
-                                </td>
-                                <td>
-                                    <i class="triangle-leftward"></i>
-                                </td>
-                                <td>
-                                    <i class="triangle-rightward"></i>
-                                </td>
-                            </tr>
+                        <tr>
+                            <td>
+                                <i class="triangle-upward"></i>
+                            </td>
+                            <td>
+                                <i class="triangle-downward"></i>
+                            </td>
+                            <td>
+                                <i class="triangle-leftward"></i>
+                            </td>
+                            <td>
+                                <i class="triangle-rightward"></i>
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
                 <p class="docs-intro color-blue">html代码</p>
                 <div class="docs-code-box">
                     <pre class="pre">
-                        <code class="code">
-                            <span class="c">&lt;!-- 向上的三角形 --&gt;</span>
-                            <span class="nt">&lt;i</span> <span class="na">class=</span><span
-                                class="s">"triangle-upward"</span><span class="nt">&gt;</span><span
-                                class="nt">&lt;/i&gt;</span>
+                        <code class="html">
+                            &lt;!--向上的三角形-->
+                            &lt;i class="triangle-upward">&lt;/i>
 
-                            <span class="c">&lt;!-- 向下的三角形 --&gt;</span>
-                            <span class="nt">&lt;i</span> <span class="na">class=</span><span
-                                class="s">"triangle-downward"</span><span class="nt">&gt;</span><span
-                                class="nt">&lt;/i&gt;</span>
+                            &lt;!--向下的三角形-->
+                            &lt;i class="triangle-downward">&lt;/i>
 
-                            <span class="c">&lt;!-- 向左的三角形 --&gt;</span>
-                            <span class="nt">&lt;i</span> <span class="na">class=</span><span
-                                class="s">"triangle-leftward"</span><span class="nt">&gt;</span><span
-                                class="nt">&lt;/i&gt;</span>
+                            &lt;!--向左的三角形-->
+                            &lt;i class="triangle-leftward">&lt;/i>
 
-                            <span class="c">&lt;!-- 向右的三角形 --&gt;</span>
-                            <span class="nt">&lt;i</span> <span class="na">class=</span><span
-                                class="s">"triangle-rightward"</span><span class="nt">&gt;</span><span
-                                class="nt">&lt;/i&gt;</span>
+                            &lt;!--向右的三角形-->
+                            &lt;i class="triangle-rightward">&lt;/i>
                         </code>
                     </pre>
                 </div>
@@ -119,49 +108,41 @@
                 <div class="docs-example-box">
                     <table class="docs-table" width="70%" cellpadding="0" cellspacing="0">
                         <thead>
-                            <tr>
-                                <th>普通图标</th>
-                                <th>可操作的图标</th>
-                                <th>禁止操作的图标</th>
-                            </tr>
+                        <tr>
+                            <th>普通图标</th>
+                            <th>可操作的图标</th>
+                            <th>禁止操作的图标</th>
+                        </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>
-                                    <i class="icon icon-reply" title="回复"></i>
-                                </td>
-                                <td>
-                                    <i class="icon icon-primary icon-reply bg-green" title="回复"></i>
-                                    <i class="icon icon-primary icon-reply bg-blue" title="回复"></i>
-                                </td>
-                                <td>
-                                    <i class="icon icon-primary icon-reply bg-gray disabled" title="回复"></i>
-                                </td>
-                            </tr>
+                        <tr>
+                            <td>
+                                <i class="icon icon-reply" title="回复"></i>
+                            </td>
+                            <td>
+                                <i class="icon icon-primary icon-reply bg-green" title="回复"></i>
+                                <i class="icon icon-primary icon-reply bg-blue" title="回复"></i>
+                            </td>
+                            <td>
+                                <i class="icon icon-primary icon-reply bg-gray disabled" title="回复"></i>
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
                 <p class="docs-intro color-blue">html结构</p>
                 <div class="docs-code-box">
                     <pre class="pre">
-                        <code class="code">
-                            <span class="c">&lt;!-- 普通图标 --&gt;</span>
-                            <span class="nt">&lt;i <span class="na">class=</span><span
-                                    class="s">"icon icon-reply"</span> <span class="na">title=</span><span
-                                    class="s">"回复"</span>&gt;</span><span class="nt">&lt;/i&gt;</span>
+                        <code class="html">
+                            &lt;!--普通图标-->
+                            &lt;i class="icon icon-reply" title="回复">&lt;/i>
 
-                            <span class="c">&lt;!-- 可操作的图标 --&gt;</span>
-                            <span class="nt">&lt;i <span class="na">class=</span><span
-                                    class="s">"icon icon-primary icon-reply bg-green"</span> <span class="na">title=</span><span
-                                    class="s">"回复"</span>&gt;</span><span class="nt">&lt;/i&gt;</span>
-                            <span class="nt">&lt;i <span class="na">class=</span><span
-                                    class="s">"icon icon-primary icon-reply bg-blue"</span> <span class="na">title=</span><span
-                                    class="s">"回复"</span>&gt;</span><span class="nt">&lt;/i&gt;</span>
+                            &lt;!--可操作的图标-->
+                            &lt;i class="icon icon-primary icon-reply bg-green" title="回复">&lt;/i>
+                            &lt;i class="icon icon-primary icon-reply bg-blue" title="回复">&lt;/i>
 
-                            <span class="c">&lt;!-- 禁止操作的图标 --&gt;</span>
-                            <span class="nt">&lt;i <span class="na">class=</span><span
-                                    class="s">"icon icon-primary icon-reply bg-gray disabled"</span> <span class="na">title=</span><span
-                                    class="s">"回复"</span>&gt;</span><span class="nt">&lt;/i&gt;</span>
+                            &lt;!--禁止操作的图标-->
+                            &lt;i class="icon icon-primary icon-reply bg-gray disabled" title="回复">&lt;/i>
                         </code>
                     </pre>
                 </div>
@@ -206,36 +187,24 @@
                 <p class="docs-intro color-blue">html结构</p>
                 <div class="docs-code-box">
                     <pre class="pre">
-                        <code class="code">
-                            <span class="c">&lt;!-- 幽灵按钮 --&gt;</span>
-                            <span class="nt">&lt;button <span class="na">class=</span><span
-                                class="s">"btn-spirit"</span> <span class="na">type=</span><span
-                                class="s">"button"</span>&gt;</span>幽灵按钮<span class="nt">&lt;/button&gt;</span>
+                        <code class="html">
+                            &lt;!-- 幽灵按钮 -->
+                            &lt;button class="btn-spirit">幽灵按钮&lt;/button>
 
-                            <span class="c">&lt;!-- 禁止按钮 --&gt;</span>
-                            <span class="nt">&lt;button <span class="na">class=</span><span
-                                class="s">"btn-disabled"</span> <span class="na">type=</span><span
-                                class="s">"button"</span>&gt;</span>禁止按钮<span class="nt">&lt;/button&gt;</span>
+                            &lt;!-- 禁止按钮 -->
+                            &lt;button class="btn-disabled">禁止按钮&lt;/button>
 
-                            <span class="c">&lt;!-- 基础按钮 --&gt;</span>
-                            <span class="nt">&lt;button <span class="na">class=</span><span
-                                class="s">"btn-normal bg-green"</span> <span class="na">type=</span><span
-                                class="s">"button"</span>&gt;</span>绿色按钮<span class="nt">&lt;/button&gt;</span>
-                            <span class="nt">&lt;button <span class="na">class=</span><span
-                                class="s">"btn-normal bg-blue"</span> <span class="na">type=</span><span
-                                class="s">"button"</span>&gt;</span>蓝色按钮<span class="nt">&lt;/button&gt;</span>
+                            &lt;!-- 基础按钮 -->
+                            &lt;button class="btn-normal bg-green" type="button">绿色按钮&lt;/button>
+                            &lt;button class="btn-normal bg-blue" type="button">蓝色按钮&lt;/button>
 
-                            <span class="c">&lt;!-- 大按钮 --&gt;</span>
-                            <span class="nt">&lt;button <span class="na">class=</span><span
-                                class="s">"btn-big bg-green"</span> <span class="na">type=</span><span
-                                class="s">"button"</span>&gt;</span>绿色大按钮<span class="nt">&lt;/button&gt;</span>
-                            <span class="nt">&lt;button <span class="na">class=</span><span
-                                class="s">"btn-big bg-blue"</span> <span class="na">type=</span><span
-                                class="s">"button"</span>&gt;</span>蓝色大按钮<span class="nt">&lt;/button&gt;</span>
+                            &lt;!-- 大按钮 -->
+                            &lt;button class="btn-big bg-green" type="button">绿色按钮&lt;/button>
+                            &lt;button class="btn-big bg-blue" type="button">蓝色按钮&lt;/button>
                         </code>
                     </pre>
                 </div>
-                <p class="docs-intro color-blue">按钮组</p>
+                <p class="docs-intro color-blue">按钮使用</p>
                 <p class="docs-intro">当有两个或以上的按钮时，在按钮组的外层添加一个类名为 <span class="code-label">.btn-box</span> 的 div，可以使按钮 <span class="code-label">水平居中</span> 显示，且按钮和按钮之间的间距为 <span class="code-label">20px</span> 。</p>
                 <div class="docs-example-box">
                     <div class="docs-intro">
@@ -260,19 +229,12 @@
                 <p class="docs-intro color-blue">html结构</p>
                 <div class="docs-code-box">
                     <pre class="pre">
-                        <code class="code">
-                            <span class="nt">&lt;div <span class="na">class=</span><span
-                                    class="s">"btn-box"</span>&gt;</span>
-                                <span class="nt">&lt;button <span class="na">class=</span><span
-                                    class="s">"btn-normal bg-green"</span> <span class="na">type=</span><span
-                                    class="s">"button"</span>&gt;</span>结算<span class="nt">&lt;/button&gt;</span>
-                                <span class="nt">&lt;button <span class="na">class=</span><span
-                                    class="s">"btn-normal bg-green"</span> <span class="na">type=</span><span
-                                    class="s">"button"</span>&gt;</span>筛选<span class="nt">&lt;/button&gt;</span>
-                                <span class="nt">&lt;button <span class="na">class=</span><span
-                                    class="s">"btn-normal bg-blue"</span> <span class="na">type=</span><span
-                                    class="s">"button"</span>&gt;</span>导出<span class="nt">&lt;/button&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
+                        <code class="html">
+                            &lt;div class="btn-box">
+                                &lt;button class="btn-normal bg-green">结算&lt;/button>
+                                &lt;button class="btn-normal bg-green">筛选&lt;/button>
+                                &lt;button class="btn-normal bg-blue">导出&lt;/button>
+                            &lt;/div>
                         </code>
                     </pre>
                 </div>
@@ -293,15 +255,14 @@
                 <p class="docs-intro color-blue">html结构</p>
                 <div class="docs-code-box">
                     <pre class="pre">
-                        <code class="code">
-                            <span class="nt">&lt;nav </span><span class="na">class=</span><span class="s">"nav-tab"</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;ul<span class="nt">&gt;</span>
-                                    <span class="nt">&lt;li <span class="na">class=</span><span class="s">"nav-tab-item"</span></span><span class="nt">&gt;</span>系统参数管理<span
-                                    class="nt">&lt;i <span class="na">class=</span><span class="s">"icon icon-close"</span>&gt;</span><span
-                                    class="nt">&lt;/i&gt;</span><span
-                                    class="nt">&lt;/li</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;/ul</span><span class="nt">&gt;</span>
-                            <span class="nt">&lt;/nav</span><span class="nt">&gt;</span>
+                        <code class="html">
+                            &lt;nav class="nav-tab">
+                                &lt;ul>
+                                    &lt;li class="nav-tab-item active">系统参数管理&lt;i class="icon icon-close">&lt;/i>&lt;/li>
+                                    &lt;li class="nav-tab-item">投顾管理&lt;i class="icon icon-close">&lt;/i>&lt;/li>
+                                    &lt;li class="nav-tab-item">职位管理&lt;i class="icon icon-close">&lt;/i>&lt;/li>
+                                &lt;/ul>
+                            &lt;/nav>
                         </code>
                     </pre>
                 </div>
@@ -309,10 +270,11 @@
             <!--表单-->
             <div id="form" class="cu-docs-section">
                 <h3 class="docs-header">表单</h3>
+                <p class="docs-intro">为了避免样式冲突，表单模块的样式需在最外层添加 <span class="code-label">.cloud-ui-form</span> 类。</p>
                 <!--搜索框-->
                 <p class="docs-intro color-blue">搜索框</p>
                 <div class="docs-example-box">
-                    <form method="" role="search">
+                    <form class="cloud-ui-form" method="" role="search">
                         <div class="search-box">
                             <input class="search-input" type="text" placeholder="搜索">
                             <i class="icon icon-search" title="搜索"></i>
@@ -322,17 +284,13 @@
                 <p class="docs-intro color-blue">html结构</p>
                 <div class="docs-code-box">
                     <pre class="pre">
-                        <code class="code">
-                            <span class="nt">&lt;form </span><span class="na">method=</span><span class="s">""</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"search-box"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;input </span><span
-                                        class="na">class=</span><span class="s">"search-input"</span> <span
-                                        class="na">type=</span><span class="s">"text"</span> <span
-                                        class="na">placeholder=</span><span class="s">"搜索"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;i </span><span class="na">class</span><span class="s">"icon icon-search"</span><span
-                                        class="nt">&gt;</span><span class="nt">&lt;/i&gt;</span>
-                                <span class="nt">&lt;/div&gt;</span>
-                            <span class="nt">&lt;/form&gt;</span>
+                        <code class="html">
+                            &lt;form class="cloud-ui-form" method="" role="search">
+                                &lt;div class="search-box">
+                                    &lt;input class="search-input" type="text" placeholder="搜索">
+                                    &lt;i class="icon icon-search" title="搜索">&lt;/i>
+                                &lt;/div>
+                            &lt;/form>
                         </code>
                     </pre>
                 </div>
@@ -340,7 +298,7 @@
                 <p class="docs-intro color-blue">文本输入框</p>
                 <p class="docs-intro">为 <span class="code-label">input</span> 标签添加 <span class="code-label">.form-input</span> 类给文本输入框设置最基础的样式。</p>
                 <div class="docs-example-box">
-                    <form method="">
+                    <form class="cloud-ui-form" method="">
                         <div class="form-block">
                             <label class="form-label" for="item_0">常规输入框:</label>
                             <div class="input-block">
@@ -352,27 +310,27 @@
                 <p class="docs-intro color-blue">html结构</p>
                 <div class="docs-code-box">
                     <pre class="pre">
-                        <code class="code">
-                            <span class="nt">&lt;form </span><span class="na">method=</span><span class="s">""</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"form-block"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;label </span><span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"item_0"</span><span class="nt">&gt;</span>常规输入框:<span class="nt">&lt;/label&gt;</span>
-                                    <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"input-block"</span><span class="nt">&gt;</span>
-                                        <span class="nt">&lt;input <span class="na">class=</span><span class="s">"form-input"</span> </span><span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"item_0"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;/div&gt;</span>
-                                <span class="nt">&lt;/div&gt;</span>
-                            <span class="nt">&lt;/form&gt;</span>
+                        <code class="html">
+                            &lt;form class="cloud-ui-form" method="">
+                                &lt;div class="form-block">
+                                    &lt;label class="form-label" for="item_0">常规输入框:&lt;/label>
+                                    &lt;div class="input-block">
+                                        &lt;input class="form-input" type="text" id="item_0">
+                                    &lt;/div>
+                                &lt;/div>
+                            &lt;/form>
                         </code>
                     </pre>
                 </div>
                 <!--大文本输入框-->
                 <p class="docs-intro color-blue">大文本输入框</p>
-                <p class="docs-intro">为 <span class="code-label">input</span> 标签添加 <span class="code-label">.form-input-big</span> 类可以设置一个大的输入框。</p>
+                <p class="docs-intro">添加 <span class="code-label">.input-block-big</span> 类可以设置一个大的输入框。</p>
                 <div class="docs-example-box">
-                    <form method="">
+                    <form class="cloud-ui-form" method="">
                         <div class="form-block">
                             <label class="form-label"  for="item_1">大尺寸输入框:</label>
-                            <div class="input-block">
-                                <input class="form-input-big" type="text" id="item_1">
+                            <div class="input-block input-block-big">
+                                <input class="form-input" type="text" id="item_1">
                             </div>
                         </div>
                     </form>
@@ -380,30 +338,30 @@
                 <p class="docs-intro color-blue">html结构</p>
                 <div class="docs-code-box">
                     <pre class="pre">
-                        <code class="code">
-                            <span class="nt">&lt;form </span><span class="na">method=</span><span class="s">""</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"form-block"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;label </span><span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"item_1"</span><span class="nt">&gt;</span>常规输入框:<span class="nt">&lt;/label&gt;</span>
-                                    <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"input-block"</span><span class="nt">&gt;</span>
-                                        <span class="nt">&lt;input <span class="na">class=</span><span class="s">"form-input-big"</span> </span><span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"item_1"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;/div&gt;</span>
-                                <span class="nt">&lt;/div&gt;</span>
-                            <span class="nt">&lt;/form&gt;</span>
+                        <code class="html">
+                            &lt;form class="cloud-ui-form" method="">
+                                &lt;div class="form-block">
+                                    &lt;label class="form-label"  for="item_1">大尺寸输入框:&lt;/label>
+                                    &lt;div class="input-block input-block-big">
+                                        &lt;input class="form-input" type="text" id="item_1">
+                                    &lt;/div>
+                                &lt;/div>
+                            &lt;/form>
                         </code>
                     </pre>
                 </div>
                 <!--下拉列表-->
                 <p class="docs-intro color-blue">下拉列表</p>
                 <div class="docs-example-box">
-                    <form method="">
+                    <form class="cloud-ui-form" method="">
                         <div class="form-block">
                             <label class="form-label" >下拉列表控件:</label>
                             <div class="input-block">
                                 <select class="form-select" name="agency_list">
-                                    <option value="0管理机构">0管理机构</option>
-                                    <option value="1管理机构">1管理机构</option>
-                                    <option value="2管理机构">2管理机构</option>
-                                    <option value="3管理机构">3管理机构</option>
+                                    <option value="管理机构">管理机构</option>
+                                    <option value="管理机构">管理机构</option>
+                                    <option value="管理机构">管理机构</option>
+                                    <option value="管理机构">管理机构</option>
                                 </select>
                             </div>
                         </div>
@@ -412,27 +370,27 @@
                 <p class="docs-intro color-blue">html结构</p>
                 <div class="docs-code-box">
                     <pre class="pre">
-                        <code class="code">
-                            <span class="nt">&lt;form </span><span class="na">method=</span><span class="s">""</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"form-block"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;label </span><span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>下拉列表控件:<span class="nt">&lt;/label&gt;</span>
-                                    <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"input-block"</span><span class="nt">&gt;</span>
-                                        <span class="nt">&lt;select </span><span class="na">class=</span><span class="s">"form-select"</span> </span><span class="na">name=</span><span class="s">"agency_list"</span><span class="nt">&gt;</span>
-                                            <span class="nt">&lt;option </span><span class="na">value=</span><span class="s">"0管理机构"</span><span class="nt">&gt;</span>0管理机构<span class="nt">&lt;/option&gt;</span>
-                                            <span class="nt">&lt;option </span><span class="na">value=</span><span class="s">"1管理机构"</span><span class="nt">&gt;</span>1管理机构<span class="nt">&lt;/option&gt;</span>
-                                            <span class="nt">&lt;option </span><span class="na">value=</span><span class="s">"2管理机构"</span><span class="nt">&gt;</span>2管理机构<span class="nt">&lt;/option&gt;</span>
-                                            <span class="nt">&lt;option </span><span class="na">value=</span><span class="s">"3管理机构"</span><span class="nt">&gt;</span>3管理机构<span class="nt">&lt;/option&gt;</span>
-                                        <span class="nt">&lt;/select&gt;</span>
-                                    <span class="nt">&lt;/div&gt;</span>
-                                <span class="nt">&lt;/div&gt;</span>
-                            <span class="nt">&lt;/form&gt;</span>
+                        <code class="html">
+                            &lt;form class="cloud-ui-form" method="">
+                                &lt;div class="form-block">
+                                    &lt;label class="form-label" >下拉列表控件:&lt;/label>
+                                    &lt;div class="input-block">
+                                        &lt;select class="form-select" name="agency_list">
+                                            &lt;option value="管理机构">管理机构&lt;/option>
+                                            &lt;option value="管理机构">管理机构&lt;/option>
+                                            &lt;option value="管理机构">管理机构&lt;/option>
+                                            &lt;option value="管理机构">管理机构&lt;/option>
+                                        &lt;/select>
+                                    &lt;/div>
+                                &lt;/div>
+                            &lt;/form>
                         </code>
                     </pre>
                 </div>
                 <!--多行文本输入框-->
                 <p class="docs-intro color-blue">多行文本输入框</p>
                 <div class="docs-example-box">
-                    <form method="">
+                    <form class="cloud-ui-form" method="">
                         <div class="form-textarea">
                             <label class="textarea-label" for="item_2">备注:</label>
                             <div class="textarea-block">
@@ -444,22 +402,22 @@
                 <p class="docs-intro color-blue">html结构</p>
                 <div class="docs-code-box">
                     <pre class="pre">
-                        <code class="code">
-                            <span class="nt">&lt;form </span><span class="na">method=</span><span class="s">""</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"form-textarea"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;label </span><span class="na">class=</span><span class="s">"textarea-label"</span> <span class="na">for=</span><span class="s">"item_2"</span><span class="nt">&gt;</span>备注:<span class="nt">&lt;/label&gt;</span>
-                                    <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"textarea-block"</span><span class="nt">&gt;</span>
-                                        <span class="nt">&lt;textarea </span><span class="na">class=</span><span class="s">"textarea-input scroll-bar scroll-vertical" </span><span class="na">id=</span><span class="s">"item_2"</span><span class="nt">&gt;</span><span class="nt">&lt;/textarea&gt;</span>
-                                    <span class="nt">&lt;/div&gt;</span>
-                                <span class="nt">&lt;/div&gt;</span>
-                            <span class="nt">&lt;/form&gt;</span>
+                        <code class="html">
+                            &lt;form class="cloud-ui-form" method="">
+                                &lt;div class="form-textarea">
+                                    &lt;label class="textarea-label" for="item_2">备注:&lt;/label>
+                                    &lt;div class="textarea-block">
+                                        &lt;textarea class="textarea-input scroll-bar scroll-vertical" id="item_2">&lt;/textarea>
+                                    &lt;/div>
+                                &lt;/div>
+                            &lt;/form>
                         </code>
                     </pre>
                 </div>
                 <!--标记星号-->
                 <p class="docs-intro color-blue">标记星号</p>
                 <div class="docs-example-box">
-                    <form method="">
+                    <form class="cloud-ui-form" method="">
                         <div class="form-block">
                             <label class="form-label" for="item_3"><em class="required-item">*</em>手机号码:</label>
                             <div class="input-block">
@@ -471,25 +429,23 @@
                 <p class="docs-intro color-blue">html结构</p>
                 <div class="docs-code-box">
                     <pre class="pre">
-                        <code class="code">
-                            <span class="nt">&lt;form </span><span class="na">method=</span><span class="s">""</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"form-block"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;label </span><span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span
-                                        class="s">"item_3"</span><span class="nt">&gt;</span><span class="nt">&lt;em </span><span class="na">class=</span><span
-                                        class="s">"required-item"</span><span class="nt">&gt;</span>*<span class="nt">&lt;/em&gt;</span>手机号码:<span class="nt">&lt;/label&gt;</span>
-                                    <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"input-block"</span><span class="nt">&gt;</span>
-                                        <span class="nt">&lt;input <span class="na">class=</span><span class="s">"form-input"</span> </span><span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"item_3"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;/div&gt;</span>
-                                <span class="nt">&lt;/div&gt;</span>
-                            <span class="nt">&lt;/form&gt;</span>
+                        <code class="html">
+                            &lt;form class="cloud-ui-form" method="">
+                                &lt;div class="form-block">
+                                    &lt;label class="form-label" for="item_3">&lt;em class="required-item">*&lt;/em>手机号码:&lt;/label>
+                                    &lt;div class="input-block">
+                                        &lt;input type="text" class="form-input" id="item_3">
+                                    &lt;/div>
+                                &lt;/div>
+                            &lt;/form>
                         </code>
                     </pre>
                 </div>
-                <!--失效，警告-->
+                <!--失效,警告-->
                 <p class="docs-intro color-blue">失效，警告</p>
                 <p class="docs-intro">当表单验证需要显示提示信息时，在 <span class="code-label">.input-block</span> 类后面添加 <span class="code-label">.error</span> 类，可以显示提示信息。</p>
                 <div class="docs-example-box">
-                    <form method="">
+                    <form class="cloud-ui-form" method="">
                         <div class="form-block">
                             <label class="form-label" for="item_4">手机号码:</label>
                             <div class="input-block error">
@@ -501,151 +457,146 @@
                     </form>
                 </div>
                 <div class="docs-example-box">
-                    <form method="">
+                    <form class="cloud-ui-form" method="">
                         <div class="form-block">
                             <label class="form-label" for="item_5">身份证号码:</label>
-                            <div class="input-block error">
-                                <input class="form-input-big" type="text" id="item_5">
+                            <div class="input-block input-block-big error">
+                                <input class="form-input" type="text" id="item_5">
                                 <i class="icon icon-close-bg"></i>
-                                <p class="error-tips">这是提示信息这是提示信息！</p>
                             </div>
+                            <p class="error-tips">这是提示信息这是提示信息！</p>
                         </div>
                     </form>
                 </div>
                 <p class="docs-intro color-blue">html结构</p>
+                <p class="docs-intro">注意，两种提示信息的 <span class="code-label">html</span> 结构是不同的。</p>
                 <div class="docs-code-box">
                     <pre class="pre">
-                        <code class="code">
-                            <span class="nt">&lt;form </span><span class="na">method=</span><span class="s">""</span><span class="nt">&gt;</span>
-                                <span class="c">&lt;!-- 提示信息在输入框下面 --&gt;</span>
-                                <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"form-block"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;label </span><span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"item_4"</span><span class="nt">&gt;</span>手机号码:<span class="nt">&lt;/label&gt;</span>
-                                    <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"input-block error"</span><span class="nt">&gt;</span>
-                                        <span class="nt">&lt;input <span class="na">class=</span><span class="s">"form-input"</span> </span><span class="na">type=</span><span
-                                            class="s">"text"</span> <span class="na">id=</span><span class="s">"item_4"</span><span class="nt">&gt;</span>
-                                        <span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"icon icon-close-bg"</span><span class="nt">&gt;</span><span class="nt">&lt;/i&gt;</span>
-                                        <span class="nt">&lt;p </span><span class="na">class=</span><span class="s">"error-tips"</span><span class="nt">&gt;</span>这是提示信息！<span class="nt">&lt;/p&gt;</span>
-                                    <span class="nt">&lt;/div&gt;</span>
-                                <span class="nt">&lt;/div&gt;</span>
+                        <code class="html">
+                            &lt;form class="cloud-ui-form" method="">
+                                &lt;div class="form-block">
+                                    &lt;label class="form-label" for="item_4">手机号码:&lt;/label>
+                                    &lt;div class="input-block error">
+                                        &lt;input  class="form-input" type="text" id="item_4">
+                                        &lt;i class="icon icon-close-bg">&lt;/i>
+                                        &lt;p class="error-tips">这是提示信息！&lt;/p>
+                                    &lt;/div>
+                                &lt;/div>
 
-                                <span class="c">&lt;!-- 提示信息在输入框后面 --&gt;</span>
-                                <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"form-block"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;label </span><span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"item_5"</span><span class="nt">&gt;</span>省份证号码:<span class="nt">&lt;/label&gt;</span>
-                                    <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"input-block error"</span><span class="nt">&gt;</span>
-                                        <span class="nt">&lt;input <span class="na">class=</span><span class="s">"form-input-big"</span> </span><span class="na">type=</span><span
-                                            class="s">"text"</span> <span class="na">id=</span><span class="s">"item_5"</span><span class="nt">&gt;</span>
-                                        <span class="nt">&lt;i </span><span class="na">class=</span><span class="s">"icon icon-close-bg"</span><span class="nt">&gt;</span><span class="nt">&lt;/i&gt;</span>
-                                        <span class="nt">&lt;p </span><span class="na">class=</span><span class="s">"error-tips"</span><span class="nt">&gt;</span>这是提示信息！<span class="nt">&lt;/p&gt;</span>
-                                    <span class="nt">&lt;/div&gt;</span>
-                                <span class="nt">&lt;/div&gt;</span>
-                            <span class="nt">&lt;/form&gt;</span>
+                                &lt;div class="form-block">
+                                    &lt;label class="form-label" for="item_5">身份证号码:&lt;/label>
+                                    &lt;div class="input-block input-block-big error">
+                                        &lt;input class="form-input" type="text" id="item_5">
+                                        &lt;i class="icon icon-close-bg">&lt;/i>
+                                    &lt;/div>
+                                    &lt;p class="error-tips">这是提示信息这是提示信息！&lt;/p>
+                                &lt;/div>
+                            &lt;/form>
                         </code>
                     </pre>
                 </div>
                 <!--单选按钮,复选按钮,切换按钮-->
                 <p class="docs-intro color-blue">单选按钮，复选按钮，切换按钮</p>
-                <p class="docs-intro">通过 <span class="code-label">&lt;input&gt;</span>  <span class="code-label">&lt;label&gt;</span> 标签模拟单选按钮,复选按钮,切换按钮，替代浏览器默认样式。</p>
+                <p class="docs-intro">通过 <span class="code-label">&lt;input&gt;</span> 、 <span class="code-label">&lt;label&gt;</span> 标签模拟单选按钮,复选按钮,切换按钮，替代浏览器默认样式。</p>
                 <div class="docs-example-box">
                     <table class="docs-table" width="50%" cellpadding="0" cellspacing="0">
                         <thead>
-                            <tr>
-                                <th>单选按钮(样式一)</th>
-                                <th>单选按钮(样式二)</th>
-                                <th>复选按钮</th>
-                                <th>切换按钮</th>
-                            </tr>
+                        <tr>
+                            <th>单选按钮(圆点)</th>
+                            <th>单选按钮(勾)</th>
+                            <th>复选按钮</th>
+                            <th>切换按钮</th>
+                        </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>
-                                    <div class="form-radio">
-                                        <input class="radio-input-normal" type="radio" name="options" id="radio_0"/>
-                                        <label class="radio-label-normal" for="radio_0"></label>
-                                    </div>
-                                    <div class="form-radio">
-                                        <input class="radio-input-normal" type="radio" name="options" id="radio_1"/>
-                                        <label class="radio-label-normal" for="radio_1"></label>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-radio">
-                                        <input class="radio-input-check" type="radio" name="options" id="radio_00"/>
-                                        <label class="radio-label-check" for="radio_00"></label>
-                                    </div>
-                                    <div class="form-radio">
-                                        <input class="radio-input-check" type="radio" name="options" id="radio_01"/>
-                                        <label class="radio-label-check" for="radio_01"></label>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-checkbox">
-                                        <input type="checkbox" id="checkbox_0"/>
-                                        <label for="checkbox_0"></label>
-                                    </div>
-                                    <div class="form-checkbox">
-                                        <input type="checkbox" id="checkbox_1"/>
-                                        <label for="checkbox_1"></label>
-                                    </div>
-                                </td>
-                                <td>
-                                    <label class="label-switch">
-                                        <input type="checkbox" name="switch">
-                                        <div class="checkbox"></div>
-                                    </label>
-                                </td>
-                            </tr>
+                        <tr>
+                            <td>
+                                <div class="form-radio">
+                                    <input class="radio-input-normal" type="radio" name="options" id="radio_0"/>
+                                    <label class="radio-label-normal" for="radio_0"></label>
+                                </div>
+                                <div class="form-radio">
+                                    <input class="radio-input-normal" type="radio" name="options" id="radio_1"/>
+                                    <label class="radio-label-normal" for="radio_1"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-radio">
+                                    <input class="radio-input-check" type="radio" name="options" id="radio_00"/>
+                                    <label class="radio-label-check" for="radio_00"></label>
+                                </div>
+                                <div class="form-radio">
+                                    <input class="radio-input-check" type="radio" name="options" id="radio_01"/>
+                                    <label class="radio-label-check" for="radio_01"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-checkbox">
+                                    <input type="checkbox" id="checkbox_0"/>
+                                    <label for="checkbox_0"></label>
+                                </div>
+                                <div class="form-checkbox">
+                                    <input type="checkbox" id="checkbox_1"/>
+                                    <label for="checkbox_1"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <label class="label-switch">
+                                    <input type="checkbox" name="switch">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
                 <p class="docs-intro color-blue">html代码</p>
                 <div class="docs-code-box">
                     <pre class="pre">
-                        <code class="code">
-                            <span class="c">&lt;!-- 单选按钮(样式一) --&gt;</span>
-                            <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"form-radio"</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;input </span><span class="na">class=</span><span class="s">"radio-input-normal"</span> <span
-                                class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"options"</span> <span class="na">id=</span><span class="s">"radio_0"</span><span class="nt">/&gt;</span>
-                                <span class="nt">&lt;label </span><span class="na">class=</span><span class="s">"radio-label-normal"</span> <span class="na">for=</span><span class="s">"radio_0"</span><span class="nt">&gt;</span><span class="nt">&lt;/label&gt;</span>
-                           <span class="nt">&lt;/div&gt;</span>
-                            <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"form-radio"</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;input </span><span class="na">class=</span><span class="s">"radio-input-normal"</span> <span
-                                class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"options"</span> <span class="na">id=</span><span class="s">"radio_1"</span><span class="nt">/&gt;</span>
-                                <span class="nt">&lt;label </span><span class="na">class=</span><span class="s">"radio-label-normal"</span> <span class="na">for=</span><span class="s">"radio_1"</span><span class="nt">&gt;</span><span class="nt">&lt;/label&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
+                        <code class="html">
+                            &lt;!-- 单选按钮(圆点) -->
+                            &lt;div class="form-radio">
+                                &lt;input class="radio-input-normal" type="radio" name="options" id="radio_0"/>
+                                &lt;label class="radio-label-normal" for="radio_0">&lt;/label>
+                            &lt;/div>
+                            &lt;div class="form-radio">
+                                &lt;input class="radio-input-normal" type="radio" name="options" id="radio_1"/>
+                                &lt;label class="radio-label-normal" for="radio_1">&lt;/label>
+                            &lt;/div>
 
-                            <span class="c">&lt;!-- 单选按钮(样式二) --&gt;</span>
-                            <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"form-radio"</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;input </span><span class="na">class=</span><span class="s">"radio-input-check"</span> <span
-                                    class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"options"</span> <span class="na">id=</span><span class="s">"radio_00"</span><span class="nt">/&gt;</span>
-                                <span class="nt">&lt;label </span><span class="na">class=</span><span class="s">"radio-label-check"</span> <span class="na">for=</span><span class="s">"radio_00"</span><span class="nt">&gt;</span><span class="nt">&lt;/label&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
-                            <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"form-radio"</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;input </span><span class="na">class=</span><span class="s">"radio-input-check"</span> <span
-                                    class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"options"</span> <span class="na">id=</span><span class="s">"radio_01"</span><span class="nt">/&gt;</span>
-                                <span class="nt">&lt;label </span><span class="na">class=</span><span class="s">"radio-label-check"</span> <span class="na">for=</span><span class="s">"radio_01"</span><span class="nt">&gt;</span><span class="nt">&lt;/label&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
+                            &lt;!-- 单选按钮(勾) -->
+                            &lt;div class="form-radio">
+                                &lt;input class="radio-input-check" type="radio" name="options" id="radio_00"/>
+                                &lt;label class="radio-label-check" for="radio_00">&lt;/label>
+                            &lt;/div>
+                            &lt;div class="form-radio">
+                                &lt;input class="radio-input-check" type="radio" name="options" id="radio_01"/>
+                                &lt;label class="radio-label-check" for="radio_01">&lt;/label>
+                            &lt;/div>
 
+                            &lt;!-- 复选按钮 -->
+                            &lt;div class="form-checkbox">
+                                &lt;input type="checkbox" id="checkbox_0"/>
+                                &lt;label for="checkbox_0">&lt;/label>
+                            &lt;/div>
+                            &lt;div class="form-checkbox">
+                                &lt;input type="checkbox" id="checkbox_1"/>
+                                &lt;label for="checkbox_1">&lt;/label>
+                            &lt;/div>
 
-                            <span class="c">&lt;!-- 复选按钮 --&gt;</span>
-                            <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"form-checkbox"</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;label </span><span class="na">for=</span><span class="s">"checkbox_0"</span><span class="nt">&gt;</span><span class="nt">&lt;/label&gt;</span>
-                                <span class="nt">&lt;input </span><span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"options"</span> <span class="na">id=</span><span class="s">"checkbox_0"</span><span class="nt">/&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
-
-                            <span class="c">&lt;!-- 切换按钮 --&gt;</span>
-                            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"label-switch"</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;input</span> <span class="na">type=</span><span
-                                    class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"switch"</span><span class="nt">/&gt;</span>
-                                <span class="nt">&lt;div</span> <span class="na">class=</span><span
-                                    class="s">"checkbox"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
-                            <span class="nt">&lt;/label&gt;</span>
+                            &lt;!-- 切换按钮 -->
+                            &lt;label class="label-switch">
+                                &lt;input type="checkbox" name="switch">
+                                &lt;div class="checkbox">&lt;/div>
+                            &lt;/label>
                         </code>
                     </pre>
                 </div>
                 <!--表单元素的使用-->
                 <p class="docs-intro color-blue">表单元素的使用</p>
+                <p class="docs-intro">当表单元素组合使用时，通过 <span class="code-label">.form-group</span> 类将表单元素限制在同一排中。使用时，根据具体情况设置 <span class="code-label">.form-block</span> 、 <span class="code-label">.form-label</span> 和 <span class="code-label">.input-block</span>的宽度和其他样式（比如间距），从而使表单元素具有统一的样式。</p>
                 <div class="docs-example-box">
-                    <form action="">
+                    <form class="cloud-ui-form" action="">
                         <div class="form-group">
                             <div class="form-block">
                                 <label class="form-label" for="item_6"><em class="required-item">*</em>申请人姓名:</label>
@@ -709,222 +660,231 @@
                         </div>
                     </form>
                 </div>
+                <p class="docs-intro color-blue">html代码</p>
+                <div class="docs-code-box">
+                    <pre class="pre">
+                        <code class="html">
+                            &lt;form class="cloud-ui-form" action="">
+                                &lt;div class="form-group">
+                                    &lt;div class="form-block">&lt;/div>
+                                    &lt;div class="form-block">&lt;/div>
+                                &lt;/div>
+                                &lt;div class="form-group">
+                                    &lt;div class="form-block">
+                                        &lt;label class="form-label">性别:&lt;/label>
+                                        &lt;div class="input-block">
+                                            &lt;div class="radio-group">
+                                                &lt;div class="radio-box">
+                                                    &lt;div class="form-radio">&lt;/div>
+                                                    &lt;span>男&lt;/span>
+                                                &lt;/div>
+                                                &lt;div class="radio-box">
+                                                    &lt;div class="form-radio">&lt;/div>
+                                                    &lt;span>女&lt;/span>
+                                                &lt;/div>
+                                            &lt;/div>
+                                        &lt;/div>
+                                    &lt;/div>
+                                &lt;/div>
+                                &lt;div class="form-group">
+                                    &lt;div class="form-textarea">&lt;/div>
+                                &lt;/div>
+                            &lt;/form>
+                        </code>
+                    </pre>
+                </div>
             </div>
             <!--表格-->
             <div id=table class="cu-docs-section">
                 <h3 class="docs-header">表格</h3>
+                <p class="docs-intro">为了避免样式冲突，需给 <span class="code-label">&lt;table&gt;</span> 标签添加 <span class="code-label">.cloud-ui-table</span> 类。</p>
                 <!--左对齐的表格-->
                 <p class="docs-intro color-blue">左对齐的表格(表头和单元格内容水平居左垂直居中对齐)</p>
-                <p class="docs-intro">给 <span class="code-label">&lt;table&gt;</span> 标签添加 <span class="code-label">.ui-table</span> 类可以设置最基础的表格样式。给 <span class="code-label">&lt;td&gt;</span> 标签添加 <span class="code-label">.text-overflow</span> 类可以设置单元格内文字溢出隐藏。</p>
+                <p class="docs-intro"><span class="code-label">.cloud-ui-table</span> 类可以设置最基础的表格样式。给 <span class="code-label">&lt;td&gt;</span> 标签添加 <span class="code-label">.text-overflow</span> 类可以使单元格内的文字溢出时隐藏。</p>
                 <div class="docs-example-box">
-                    <table class="ui-table" width="100%" cellpadding="0" cellspacing="0">
+                    <table class="cloud-ui-table" width="100%" cellpadding="0" cellspacing="0">
                         <thead>
-                            <tr>
-                                <th>用户昵称</th>
-                                <th>联系电话</th>
-                                <th>评价等级</th>
-                                <th>意见</th>
-                                <th>回复情况</th>
-                                <th>所属应用</th>
-                            </tr>
+                        <tr>
+                            <th>用户昵称</th>
+                            <th>联系电话</th>
+                            <th>评价等级</th>
+                            <th>意见</th>
+                            <th>回复情况</th>
+                            <th>所属应用</th>
+                        </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>张三</td>
-                                <td>13234567890</td>
-                                <td>很好</td>
-                                <td class="text-overflow"><span title="投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好">投顾非常专业很好投顾非常专业很好投顾非常专业很好投顾非常专业投顾非常专业很好投顾非常专业很好投顾非常专业很好投顾非常专业很好投顾非常专业很好投顾非常专业很好投顾非常专业很好很好投顾非常专业很好投顾非常专业很好投顾非常专业很好</span></td>
-                                <td>已回复</td>
-                                <td>领投宝</td>
-                            </tr>
-                            <tr>
-                                <td>周大福</td>
-                                <td>13234567890</td>
-                                <td>一般</td>
-                                <td class="text-overflow"><span title="投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好">投顾非常专业很好投顾非常专业很好投顾非常专业很好投顾非常专业投顾非常专业很好投顾非常专业很好投顾非常专业很好投顾非常专业很好投顾非常专业很好投顾非常专业很好投顾非常专业很好很好投顾非常专业很好投顾非常专业很好投顾非常专业很好</span></td>
-                                <td>未回复</td>
-                                <td>麻吉炒股</td>
-                            </tr>
-                            <tr>
-                                <td>李四</td>
-                                <td>13234567890</td>
-                                <td>不错</td>
-                                <td class="text-overflow"><span title="投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好">投顾非常专业很好投顾非常专业很好投顾非常专业很好投顾非常专业投顾非常专业很好投顾非常专业很好投顾非常专业很好投顾非常专业很好投顾非常专业很好投顾非常专业很好投顾非常专业很好很好投顾非常专业很好投顾非常专业很好投顾非常专业很好</span></td>
-                                <td>未回复</td>
-                                <td>大V工作室</td>
-                            </tr>
+                        <tr>
+                            <td>张三</td>
+                            <td>13234567890</td>
+                            <td>很好</td>
+                            <td class="text-overflow"><span title="投顾非常专业很好投顾非常专业很好投投顾非专业很好">投顾非常专业很好投顾非常专业很好投投顾非专业很好</span></td>
+                            <td>已回复</td>
+                            <td>领投宝</td>
+                        </tr>
+                        <tr>
+                            <td>周大福</td>
+                            <td>13234567890</td>
+                            <td>一般</td>
+                            <td class="text-overflow"><span title="投顾非常专业很好投顾非常专业很好投投顾非专业很好">投顾非常专业很好投顾非常专业很好投投顾非专业很好</span></td>
+                            <td>未回复</td>
+                            <td>麻吉炒股</td>
+                        </tr>
+                        <tr>
+                            <td>李四</td>
+                            <td>13234567890</td>
+                            <td>不错</td>
+                            <td class="text-overflow"><span title="投顾非常专业很好投顾非常专业很好投投顾非专业很好">投顾非常专业很好投顾非常专业很好投投顾非专业很好</span></td>
+                            <td>未回复</td>
+                            <td>大V工作室</td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
                 <p class="docs-intro color-blue">html代码</p>
                 <div class="docs-code-box">
                     <pre class="pre">
-                        <code class="code">
-                            <span class="nt">&lt;table</span> <span class="na">class=</span><span
-                                class="s">"ui-table"</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;thead</span> <span class="nt">&gt;</span>
-                                    <span class="nt">&lt;tr&gt;</span>
-                                        <span class="nt">&lt;th</span><span class="nt">&gt;</span>用户昵称<span
-                                            class="nt">&lt;/th&gt;</span>
-                                        <span class="nt">&lt;th</span><span class="nt">&gt;</span>联系电话<span
-                                            class="nt">&lt;/th&gt;</span>
-                                        ...
-                                        <span class="nt">&lt;th</span><span class="nt">&gt;</span>意见<span
-                                            class="nt">&lt;/th&gt;</span>
-                                        <span class="nt">&lt;th</span><span class="nt">&gt;</span>所属应用<span
-                                            class="nt">&lt;/th&gt;</span>
-                                    <span class="nt">&lt;/tr&gt;</span>
-                                <span class="nt">&lt;/thead&gt;</span>
-                                <span class="nt">&lt;tbody</span> <span class="nt">&gt;</span>
-                                    <span class="nt">&lt;tr&gt;</span>
-                                        <span class="nt">&lt;td</span><span class="nt">&gt;</span>张三<span
-                                            class="nt">&lt;/td&gt;</span>
-                                        <span class="nt">&lt;td</span><span class="nt">&gt;</span>13234567890<span
-                                            class="nt">&lt;/td&gt;</span>
-                                        ...
-                                        <span class="nt">&lt;td</span> <span class="na">class=</span><span
-                                            class="s">"text-overflow"</span> <span class="na">title=</span><span
-                                class="s">"投顾非常专业很好投顾非常非常专业投顾非常专业很好投顾非常专业很好投顾非常"</span><span class="nt">&gt;</span>投顾非常专业很好投顾非常非常专业投顾非常专业很好投顾非常专业很好投顾非常<span
-                                            class="nt">&lt;/td&gt;</span>
-                                        <span class="nt">&lt;td</span><span class="nt">&gt;</span>大V工作室<span
-                                            class="nt">&lt;/td&gt;</span>
-                                    <span class="nt">&lt;/tr&gt;</span>
-                                    <span class="nt">&lt;tr&gt;</span>
-                                        <span class="nt">&lt;td</span><span class="nt">&gt;</span>张三<span
-                                            class="nt">&lt;/td&gt;</span>
-                                        <span class="nt">&lt;td</span><span class="nt">&gt;</span>13234567890<span
-                                            class="nt">&lt;/td&gt;</span>
-                                        ...
-                                        <span class="nt">&lt;td</span> <span class="na">class=</span><span
-                                            class="s">"text-overflow"</span> <span title="na">title=</span><span
-                                class="s">"投顾非常专业很好投顾非常非常专业投顾非常专业很好投顾非常专业很好投顾非常"</span><span class="nt">&gt;</span>投顾非常专业很好投顾非常非常专业投顾非常专业很好投顾非常专业很好投顾非常<span
-                                            class="nt">&lt;/td&gt;</span>
-                                        <span class="nt">&lt;td</span><span class="nt">&gt;</span>大V工作室<span
-                                            class="nt">&lt;/td&gt;</span>
-                                    <span class="nt">&lt;/tr&gt;</span>
-                                <span class="nt">&lt;/tbody&gt;</span>
-                            <span class="nt">&lt;/table&gt;</span>
+                        <code class="html">
+                            &lt;table class="cloud-ui-table" width="100%" cellpadding="0" cellspacing="0">
+                                &lt;thead>
+                                    &lt;tr>
+                                        &lt;th>用户昵称&lt;/th>
+                                        &lt;th>联系电话&lt;/th>
+                                        &lt;th>评价等级&lt;/th>
+                                        &lt;th>意见&lt;/th>
+                                        &lt;th>回复情况&lt;/th>
+                                        &lt;th>所属应用&lt;/th>
+                                    &lt;/tr>
+                                &lt;/thead>
+                                &lt;tbody>
+                                    &lt;tr>
+                                        &lt;td>张三&lt;/td>
+                                        &lt;td>13234567890&lt;/td>
+                                        &lt;td>很好&lt;/td>
+                                        &lt;td class="text-overflow">&lt;span title="投顾非常专业很好投顾非常专业很好投投顾非专业很好">投顾非常专业很好投顾非常专业很好投投顾非专业很好&lt;/span>&lt;/td>
+                                        &lt;td>已回复&lt;/td>
+                                        &lt;td>领投宝&lt;/td>
+                                    &lt;/tr>
+                                    &lt;tr>
+                                        &lt;td>张三&lt;/td>
+                                        &lt;td>13234567890&lt;/td>
+                                        &lt;td>很好&lt;/td>
+                                        &lt;td class="text-overflow">&lt;span title="投顾非常专业很好投顾非常专业很好投投顾非专业很好">投顾非常专业很好投顾非常专业很好投投顾非专业很好&lt;/span>&lt;/td>
+                                        &lt;td>已回复&lt;/td>
+                                        &lt;td>领投宝&lt;/td>
+                                    &lt;/tr>
+                                    &lt;tr>
+                                        &lt;td>张三&lt;/td>
+                                        &lt;td>13234567890&lt;/td>
+                                        &lt;td>很好&lt;/td>
+                                        &lt;td class="text-overflow">&lt;span title="投顾非常专业很好投顾非常专业很好投投顾非专业很好">投顾非常专业很好投顾非常专业很好投投顾非专业很好&lt;/span>&lt;/td>
+                                        &lt;td>已回复&lt;/td>
+                                        &lt;td>领投宝&lt;/td>
+                                    &lt;/tr>
+                                &lt;/tbody>
+                            &lt;/table>
                         </code>
                     </pre>
                 </div>
                 <!--居中对齐的表格-->
                 <p class="docs-intro color-blue">居中对齐的表格(表头和单元格内容水平垂直居中对齐)</p>
-                <p class="docs-intro">为 <span class="code-label">&lt;table&gt;</span> 标签同时添加 <span class="code-label">.ui-table</span> 和 <span class="code-label">.table-center</span> 类可以设置表头和单元格内容水平垂直居中的表格样式。</p>
+                <p class="docs-intro">在 <span class="code-label">.cloud-ui-table</span> 类的基础上再添加 <span class="code-label">.table-center</span> 类可以设置表头和单元格内容水平垂直居中的表格样式。</p>
                 <div class="docs-example-box">
-                    <table class="ui-table table-center" width="100%" cellpadding="0" cellspacing="0">
+                    <table class="cloud-ui-table table-center" width="100%" cellpadding="0" cellspacing="0">
                         <thead>
-                            <tr>
-                                <th>用户昵称</th>
-                                <th>联系电话</th>
-                                <th>评价等级</th>
-                                <th>意见</th>
-                                <th>回复情况</th>
-                                <th>所属应用</th>
-                            </tr>
+                        <tr>
+                            <th>用户昵称</th>
+                            <th>联系电话</th>
+                            <th>评价等级</th>
+                            <th>意见</th>
+                            <th>回复情况</th>
+                            <th>所属应用</th>
+                        </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>张三</td>
-                                <td>13234567890</td>
-                                <td>很好</td>
-                                <td class="text-overflow"><span title="投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好">投顾非常专业很好投顾非常专业很好投顾非常专业很好投顾常专业很好投顾非常专业很好很好投顾非常专投专业很好投顾非常专业很好</span></td>
-                                <td>已回复</td>
-                                <td>领投宝</td>
-                            </tr>
-                            <tr>
-                                <td>周大福</td>
-                                <td>13234567890</td>
-                                <td>一般</td>
-                                <td class="text-overflow"><span title="投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好">投顾非常专业很好投顾非常顾非常专业很好投顾非常专业很好投顾非常专业很好投顾非常专业很好投顾非常专业很好投顾非常专业很好</span></td>
-                                <td>未回复</td>
-                                <td>麻吉炒股</td>
-                            </tr>
-                            <tr>
-                                <td>李四</td>
-                                <td>13234567890</td>
-                                <td>不错</td>
-                                <td class="text-overflow"><span title="投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好">投顾非常专业很好投顾非常专业很常专业很好投顾非常专业很好投顾非常专业很好很好投顾非常专业很好投顾非常专业顾非常专业很好</span></td>
-                                <td>未回复</td>
-                                <td>大V工作室</td>
-                            </tr>
+                        <tr>
+                            <td>张三</td>
+                            <td>13234567890</td>
+                            <td>很好</td>
+                            <td class="text-overflow"><span title="投顾非常专业很好投顾非常专业很好投投顾非专业很好">投顾非常专业很好投顾非常专业很好投投顾非专业很好</span></td>
+                            <td>已回复</td>
+                            <td>领投宝</td>
+                        </tr>
+                        <tr>
+                            <td>周大福</td>
+                            <td>13234567890</td>
+                            <td>一般</td>
+                            <td class="text-overflow"><span title="投顾非常专业很好投顾非常专业很好投投顾非专业很好">投顾非常专业很好投顾非常专业很好投投顾非专业很好</span></td>
+                            <td>未回复</td>
+                            <td>麻吉炒股</td>
+                        </tr>
+                        <tr>
+                            <td>李四</td>
+                            <td>13234567890</td>
+                            <td>不错</td>
+                            <td class="text-overflow"><span title="投顾非常专业很好投顾非常专业很好投投顾非专业很好">投顾非常专业很好投顾非常专业很好投投顾非专业很好</span></td>
+                            <td>未回复</td>
+                            <td>大V工作室</td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
                 <p class="docs-intro color-blue">html代码</p>
                 <div class="docs-code-box">
-                    <pre class="pre">
-                        <code class="code">
-                            <span class="nt">&lt;table</span> <span class="na">class=</span><span
-                                class="s">"ui-table table-center"</span><span class="nt">&gt;</span><span class="nt">&lt;/table&gt;</span>
-                        </code>
-                    </pre>
+                        <pre class="pre">
+                            <code class="html">
+                                &lt;table class="cloud-ui-table table-center" width="100%" cellpadding="0" cellspacing="0">&lt;/table>
+                            </code>
+                        </pre>
                 </div>
                 <!--带有图标、按钮和模态窗的表格-->
                 <p class="docs-intro color-blue">包含按钮和图标的表格</p>
                 <p class="docs-intro">为含有按钮或图标按钮的 <span class="code-label">&lt;td&gt;</span> 标签添加 <span class="code-label">.center-btns</span>
                     类设置单元格里的按钮和图标的样式。</p>
                 <div class="docs-example-box">
-                    <table class="ui-table" width="100%" cellpadding="0" cellspacing="0">
+                    <table class="cloud-ui-table" width="100%" cellpadding="0" cellspacing="0">
                         <thead>
-                            <tr>
-                                <th>用户昵称</th>
-                                <th>所属应用</th>
-                                <th>操作</th>
-                            </tr>
+                        <tr>
+                            <th>用户昵称</th>
+                            <th>所属应用</th>
+                            <th>操作</th>
+                        </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>周大福</td>
-                                <td>麻吉炒股</td>
-                                <td class="center-btns">
-                                    <span class="center-btn"><button class="btn-normal bg-green" title="添加">添加</button></span>
-                                    <span class="center-btn"><button class="btn-normal bg-blue" title="删除">删除</button></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>李四</td>
-                                <td>大V工作室</td>
-                                <td class="center-btns">
-                                    <span class="center-btn" data-toggle="modal" data-target="#myModal"><i class="icon icon-primary icon-reply bg-green" title="回复" ></i></span>
-                                    <span class="center-btn" data-toggle="modal" data-target="#myModal"><i class="icon icon-primary icon-reply bg-blue" title="回复"></i></span>
-                                </td>
-                            </tr>
+                        <tr>
+                            <td>周大福</td>
+                            <td>麻吉炒股</td>
+                            <td class="center-btns">
+                                <span class="center-btn"><button class="btn-normal bg-green" title="添加">添加</button></span>
+                                <span class="center-btn"><button class="btn-normal bg-blue" title="删除">删除</button></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>李四</td>
+                            <td>大V工作室</td>
+                            <td class="center-btns">
+                                <span class="center-btn" data-toggle="modal" data-target="#myModal"><i class="icon icon-primary icon-reply bg-green" title="回复" ></i></span>
+                                <span class="center-btn" data-toggle="modal" data-target="#myModal"><i class="icon icon-primary icon-reply bg-blue" title="回复"></i></span>
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
                 <p class="docs-intro color-blue">html代码</p>
                 <div class="docs-code-box">
                     <pre class="pre">
-                        <code class="code">
-                            <span class="c">&lt;!-- 包含按钮的单元格 --&gt;</span>
-                            <span class="nt">&lt;td</span> <span class="na">class=</span><span
-                                class="s">"center-btns"</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                    class="s">"center-btn"</span><span class="nt">&gt;</span><span class="nt">&lt;button</span> <span class="na">class=</span><span
-                                    class="s">"btn-normal bg-green"</span> <span class="na">title=</span><span
-                                    class="s">"添加"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span><span class="nt">&lt;/span&gt;</span><!-->
-                                <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                    class="s">"center-btn"</span><span class="nt">&gt;</span><span class="nt">&lt;button</span> <span class="na">class=</span><span
-                                    class="s">"btn-normal bg-blue"</span> <span class="na">title=</span><span
-                                    class="s">"删除"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span><span class="nt">&lt;/span&gt;</span><!-->
-                            <span class="nt">&lt;/td&gt;</span>
+                        <code class="html">
+                            &lt;!-- 包含按钮的单元格 -->
+                            &lt;td class="center-btns">
+                                &lt;span class="center-btn">&lt;button class="btn-normal bg-green" title="添加">添加&lt;/button>&lt;/span>
+                                &lt;span class="center-btn">&lt;button class="btn-normal bg-blue" title="删除">删除&lt;/button>&lt;/span>
+                            &lt;/td>
 
-                            <span class="c">&lt;!-- 包含图标的单元格 --&gt;</span>
-                            <span class="nt">&lt;td</span> <span class="na">class=</span><span
-                                class="s">"center-btns"</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"center-btn"</span> <span
-                                    class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span
-                                        class="s">"#myModal"</span><span class="nt">&gt;</span>
-                                        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-primary icon-reply bg-green"</span> <span
-                                        class="na">title=</span><span class="s">"查看"</span><span class="nt">&gt;</span><span class="nt">&lt;/i&gt;</span>
-                                <span class="nt">&lt;/span&gt;</span><!-->
-                                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"center-btn"</span> <span
-                                    class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span
-                                        class="s">"#myModal"</span><span class="nt">&gt;</span>
-                                        <span class="nt">&lt;i</span> <span  class="na">class=</span><span class="s">"icon icon-primary icon-reply bg-blue"</span> <span
-                                        class="na">title=</span><span class="s">"删除"</span><span class="nt">&gt;</span><span class="nt">&lt;/i&gt;</span>
-                                <span class="nt">&lt;/span&gt;</span><!-->
-                            <span class="nt">&lt;/td&gt;</span>
+                            &lt;!-- 包含可操作图标的单元格 -->
+                            &lt;td class="center-btns">
+                                &lt;span class="center-btn" data-toggle="modal" data-target="#myModal">&lt;i class="icon icon-primary icon-reply bg-green" title="回复" >&lt;/i>&lt;/span>
+                                &lt;span class="center-btn" data-toggle="modal" data-target="#myModal">&lt;i class="icon icon-primary icon-reply bg-blue" title="回复">&lt;/i>&lt;/span>
+                            &lt;/td>
                         </code>
                     </pre>
                 </div>
@@ -932,11 +892,13 @@
             <!--列表表格-->
             <div id=list class="cu-docs-section">
                 <h3 class="docs-header">列表表格</h3>
-                <p class="docs-intro">在某些业务场景下，看似表格的样式和结构不能直接用 <span class="code-label">&lt;table&gt;</span> 来实现，需要通过其他标签来模拟。模拟的表格包括两部分： <span class="code-label">&lt;.list-thead&gt;</span> 模拟表格的表头部分，  <span class="code-label">&lt;.list-tbody&gt;</span>  模拟表格的内容部分。</p>
+                <p class="docs-intro">在某些业务场景下，看似表格的样式和结构不能直接用 <span class="code-label">&lt;table&gt;</span> 来实现，需要通过其他标签来模拟。模拟的表格包括两部分： <span class="code-label">&lt;.list-thead&gt;</span> 模拟表格的表头部分，  <span class="code-label">&lt;.list-tbody&gt;</span>  模拟表格的内容部分。
+                    给 <span class="code-label">.list-td</span> 添加 <span class="code-label">.text-overflow</span> 类可以使文字溢出时隐藏。</p>
+                <p class="docs-intro">为了避免样式冲突，需在最外层添加 <span class="code-label">.cloud-ui-list-table</span> 类。</p>
                 <!--左对齐的列表-->
                 <p class="docs-intro color-blue">左对齐的列表(用列表模拟表格，内容水平左对齐垂直居中对齐)</p>
                 <div class="docs-example-box">
-                    <div class="list-table">
+                    <div class="cloud-ui-list-table">
                         <div class="list-thead">
                             <span class="list-td">用户昵称</span>
                             <span class="list-td">联系电话</span>
@@ -951,7 +913,7 @@
                                     <span class="list-td">张三</span>
                                     <span class="list-td">13234567890</span>
                                     <span class="list-td">一般</span>
-                                    <span class="list-td text-overflow" title="投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好">投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好</span>
+                                    <span class="list-td text-overflow" title="投顾非常专业很好投顾非常专业很好投投顾非专业很好">投顾非常专业很好投顾非常专业很好投投顾非专业很好</span>
                                     <span class="list-td">未回复</span>
                                     <span class="list-td">领投宝</span>
                                 </li>
@@ -959,7 +921,7 @@
                                     <span class="list-td">张三</span>
                                     <span class="list-td">13234567890</span>
                                     <span class="list-td">一般</span>
-                                    <span class="list-td text-overflow" title="投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好">投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好</span>
+                                    <span class="list-td text-overflow" title="投顾非常专业很好投顾非常专业很好投投顾非专业很好">投顾非常专业很好投顾非常专业很好投投顾非专业很好</span>
                                     <span class="list-td">未回复</span>
                                     <span class="list-td">领投宝</span>
                                 </li>
@@ -967,138 +929,7 @@
                                     <span class="list-td">张三</span>
                                     <span class="list-td">13234567890</span>
                                     <span class="list-td">一般</span>
-                                    <span class="list-td text-overflow" title="投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好">投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好</span>
-                                    <span class="list-td">未回复</span>
-                                    <span class="list-td">领投宝</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <p class="docs-intro color-blue">html代码</p>
-                <div class="docs-code-box">
-                        <pre class="pre">
-                            <code class="code">
-                                <span class="c">&lt;!-- 列表表格基础结构 --&gt;</span>
-                                <span class="nt">&lt;div</span> <span class="na">class=</span><span
-                                    class="s">"list-table"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span
-                                        class="s">"list-thead"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
-                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span
-                                        class="s">"list-tbody"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
-                                <span class="nt">&lt;/div&gt;</span>
-
-                                <span class="c">&lt;!-- 列表表格结构 --&gt;</span>
-                                <span class="nt">&lt;div</span> <span class="na">class=</span><span
-                                    class="s">"list-table"</span><span class="nt">&gt;</span>
-                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span
-                                        class="s">"list-thead"</span><span class="nt">&gt;</span>
-                                        <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                            class="s">"list-td"</span><span class="nt">&gt;</span>用户昵称<span class="nt">&lt;/span&gt;</span>
-                                        <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                            class="s">"list-td"</span><span class="nt">&gt;</span>联系电话<span class="nt">&lt;/span&gt;</span>
-                                        <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                            class="s">"list-td"</span><span class="nt">&gt;</span>评价等级<span class="nt">&lt;/span&gt;</span>
-                                        <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                            class="s">"list-td"</span><span class="nt">&gt;</span>意见<span class="nt">&lt;/span&gt;</span>
-                                        <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                            class="s">"list-td"</span><span class="nt">&gt;</span>回复情况<span class="nt">&lt;/span&gt;</span>
-                                        <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                            class="s">"list-td"</span><span class="nt">&gt;</span>所属应用<span class="nt">&lt;/span&gt;</span>
-                                    <span class="nt">&lt;/div&gt;</span>
-                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span
-                                        class="s">"list-tbody"</span><span class="nt">&gt;</span>
-                                        <span class="nt">&lt;ul</span><span class="nt">&gt;</span>
-                                            <span class="nt">&lt;li</span> <span class="na">class=</span><span
-                                                class="s">"list-tr"</span><span class="nt">&gt;</span>
-                                                <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                                    class="s">"list-td"</span><span class="nt">&gt;</span>张三<span class="nt">&lt;/span&gt;</span>
-                                                <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                                    class="s">"list-td"</span><span class="nt">&gt;</span>13234567890<span class="nt">&lt;/span&gt;</span>
-                                                <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                                    class="s">"list-td"</span><span class="nt">&gt;</span>一般<span class="nt">&lt;/span&gt;</span>
-                                                <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                                    class="s">"list-td"</span> <span class="na">title=</span><span
-                                    class="s">"投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好"</span><span class="nt">&gt;</span>投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好<span class="nt">&lt;/span&gt;</span>
-                                                <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                                    class="s">"list-td"</span><span class="nt">&gt;</span>未回复<span class="nt">&lt;/span&gt;</span>
-                                                <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                                    class="s">"list-td"</span><span class="nt">&gt;</span>领投宝<span class="nt">&lt;/span&gt;</span>
-                                            <span class="nt">&lt;/li&gt;</span>
-                                            <span class="nt">&lt;li</span> <span class="na">class=</span><span
-                                                class="s">"list-tr"</span><span class="nt">&gt;</span>
-                                                <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                                    class="s">"list-td"</span><span class="nt">&gt;</span>张三<span class="nt">&lt;/span&gt;</span>
-                                                <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                                    class="s">"list-td"</span><span class="nt">&gt;</span>13234567890<span class="nt">&lt;/span&gt;</span>
-                                                <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                                    class="s">"list-td"</span><span class="nt">&gt;</span>一般<span class="nt">&lt;/span&gt;</span>
-                                                <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                                    class="s">"list-td"</span> <span class="na">title=</span><span
-                                    class="s">"投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好"</span><span class="nt">&gt;</span>投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好<span class="nt">&lt;/span&gt;</span>
-                                                <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                                    class="s">"list-td"</span><span class="nt">&gt;</span>未回复<span class="nt">&lt;/span&gt;</span>
-                                                <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                                    class="s">"list-td"</span><span class="nt">&gt;</span>领投宝<span class="nt">&lt;/span&gt;</span>
-                                            <span class="nt">&lt;/li&gt;</span>
-                                            <span class="nt">&lt;li</span> <span class="na">class=</span><span
-                                                class="s">"list-tr"</span><span class="nt">&gt;</span>
-                                                <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                                    class="s">"list-td"</span><span class="nt">&gt;</span>张三<span class="nt">&lt;/span&gt;</span>
-                                                <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                                    class="s">"list-td"</span><span class="nt">&gt;</span>13234567890<span class="nt">&lt;/span&gt;</span>
-                                                <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                                    class="s">"list-td"</span><span class="nt">&gt;</span>一般<span class="nt">&lt;/span&gt;</span>
-                                                <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                                    class="s">"list-td"</span> <span class="na">title=</span><span
-                                    class="s">"投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好"</span><span class="nt">&gt;</span>投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好<span class="nt">&lt;/span&gt;</span>
-                                                <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                                    class="s">"list-td"</span><span class="nt">&gt;</span>未回复<span class="nt">&lt;/span&gt;</span>
-                                                <span class="nt">&lt;span</span> <span class="na">class=</span><span
-                                                    class="s">"list-td"</span><span class="nt">&gt;</span>领投宝<span class="nt">&lt;/span&gt;</span>
-                                            <span class="nt">&lt;/li&gt;</span>
-                                        <span class="nt">&lt;/ul&gt;</span>
-                                    <span class="nt">&lt;/div&gt;</span>
-                                <span class="nt">&lt;/div&gt;</span>
-                            </code>
-                        </pre>
-                </div>
-                <!--内容居中对齐的列表表格-->
-                <p class="docs-intro color-blue">居中对齐的列表表格(内容水平垂直居中对齐)</p>
-                <p class="docs-intro">同时添加 <span class="code-label">&lt;list-table&gt;</span>  <span class="code-label">&lt;list-center&gt;</span> 类设置列表表格内容水平垂直居中对齐。</p>
-                <div class="docs-example-box">
-                    <div class="list-table list-center">
-                        <div class="list-thead">
-                            <span class="list-td">用户昵称</span>
-                            <span class="list-td">联系电话</span>
-                            <span class="list-td">评价等级</span>
-                            <span class="list-td">意见</span>
-                            <span class="list-td">回复情况</span>
-                            <span class="list-td">所属应用</span>
-                        </div>
-                        <div class="list-tbody">
-                            <ul>
-                                <li  class="list-tr">
-                                    <span class="list-td">张三</span>
-                                    <span class="list-td">13234567890</span>
-                                    <span class="list-td">一般</span>
-                                    <span class="list-td text-overflow" title="投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好">投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好</span>
-                                    <span class="list-td">未回复</span>
-                                    <span class="list-td">领投宝</span>
-                                </li>
-                                <li  class="list-tr">
-                                    <span class="list-td">张三</span>
-                                    <span class="list-td">13234567890</span>
-                                    <span class="list-td">一般</span>
-                                    <span class="list-td text-overflow" title="投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好">投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好</span>
-                                    <span class="list-td">未回复</span>
-                                    <span class="list-td">领投宝</span>
-                                </li>
-                                <li  class="list-tr">
-                                    <span class="list-td">张三</span>
-                                    <span class="list-td">13234567890</span>
-                                    <span class="list-td">一般</span>
-                                    <span class="list-td text-overflow" title="投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好">投顾非常专业很好投顾非常专业很好投投顾非专业很好投顾非常专业很好投顾非常专业很好</span>
+                                    <span class="list-td text-overflow" title="投顾非常专业很好投顾非常专业很好投投顾非专业很好">投顾非常专业很好投顾非常专业很好投投顾非专业很好</span>
                                     <span class="list-td">未回复</span>
                                     <span class="list-td">领投宝</span>
                                 </li>
@@ -1109,9 +940,88 @@
                 <p class="docs-intro color-blue">html代码</p>
                 <div class="docs-code-box">
                     <pre class="pre">
-                        <code class="code">
-                            <span class="nt">&lt;div</span> <span class="na">class=</span><span
-                                class="s">"list-table list-center"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+                        <code class="html">
+                            &lt;!-- 列表表格结构 -->
+                            &lt;div class="cloud-ui-list-table">
+                                &lt;div class="list-thead">
+                                    &lt;span class="list-td">用户昵称&lt;/span>
+                                    &lt;span class="list-td">联系电话&lt;/span>
+                                    &lt;span class="list-td">评价等级&lt;/span>
+                                    &lt;span class="list-td">意见&lt;/span>
+                                    &lt;span class="list-td">回复情况&lt;/span>
+                                    &lt;span class="list-td">所属应用&lt;/span>
+                                &lt;/div>
+                                &lt;div class="list-tbody">
+                                    &lt;ul>
+                                        &lt;li class="list-tr">
+                                            &lt;span class="list-td">张三&lt;/span>
+                                        &lt;/li>
+                                        &lt;li class="list-tr">
+                                            &lt;span class="list-td">13234567890&lt;/span>
+                                        &lt;/li>
+                                        &lt;li class="list-tr">
+                                            &lt;span class="list-td">一般&lt;/span>
+                                        &lt;/li>
+                                        &lt;li class="list-tr">
+                                            &lt;span class="list-td text-overflow" title="投顾非常专业很好投顾非常专业很好投投顾非专业很好">投顾非常专业很好投顾非常专业很好投投顾非专业很好&lt;/span>
+                                        &lt;/li>
+                                        &lt;li class="list-tr">
+                                            &lt;span class="list-td">张三&lt;/span>
+                                        &lt;/li>
+                                    &lt;/ul>
+                                &lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                </div>
+                <!--内容居中对齐的列表表格-->
+                <p class="docs-intro color-blue">居中对齐的列表表格(内容水平垂直居中对齐)</p>
+                <p class="docs-intro">添加 <span class="code-label">&lt;list-center&gt;</span> 类设置列表表格内容水平垂直居中对齐。</p>
+                <div class="docs-example-box">
+                    <div class="cloud-ui-list-table list-center">
+                        <div class="list-thead">
+                            <span class="list-td">用户昵称</span>
+                            <span class="list-td">联系电话</span>
+                            <span class="list-td">评价等级</span>
+                            <span class="list-td">意见</span>
+                            <span class="list-td">回复情况</span>
+                            <span class="list-td">所属应用</span>
+                        </div>
+                        <div class="list-tbody">
+                            <ul>
+                                <li  class="list-tr">
+                                    <span class="list-td">张三</span>
+                                    <span class="list-td">13234567890</span>
+                                    <span class="list-td">一般</span>
+                                    <span class="list-td text-overflow" title="投顾非常专业很好投顾非常专业很好投投顾非专业很好">投顾非常专业很好投顾非常专业很好投投顾非专业很好</span>
+                                    <span class="list-td">未回复</span>
+                                    <span class="list-td">领投宝</span>
+                                </li>
+                                <li  class="list-tr">
+                                    <span class="list-td">张三</span>
+                                    <span class="list-td">13234567890</span>
+                                    <span class="list-td">一般</span>
+                                    <span class="list-td text-overflow" title="投顾非常专业很好投顾非常专业很好投投顾非专业很好">投顾非常专业很好投顾非常专业很好投投顾非专业很好</span>
+                                    <span class="list-td">未回复</span>
+                                    <span class="list-td">领投宝</span>
+                                </li>
+                                <li  class="list-tr">
+                                    <span class="list-td">张三</span>
+                                    <span class="list-td">13234567890</span>
+                                    <span class="list-td">一般</span>
+                                    <span class="list-td text-overflow" title="投顾非常专业很好投顾非常专业很好投投顾非专业很好">投顾非常专业很好投顾非常专业很好投投顾非专业很好</span>
+                                    <span class="list-td">未回复</span>
+                                    <span class="list-td">领投宝</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="docs-intro color-blue">html代码</p>
+                <div class="docs-code-box">
+                    <pre class="pre">
+                        <code class="html">
+                            &lt;div class="cloud-ui-list-table list-center">&lt;/div>
                         </code>
                     </pre>
                 </div>
@@ -1129,11 +1039,12 @@
                 <p class="docs-intro color-blue">html结构:</p>
                 <div class="docs-code-box">
                     <pre class="pre">
-                        <code class="code">
-                            <span class="nt">&lt;div <span class="na">class=</span><span class="s">"scroll-bar scroll-vertical"</span>&gt;</span>
-                                <span class="c">&lt;!-- 内容 --&gt;</span>
-                                <span class="nt">&lt;div&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
+                        <code class="html">
+                            &lt;div class="scroll-box scroll-bar scroll-vertical">
+                                &lt;div class="scroll-content">
+                                    &lt;!-- 内容 -->
+                                &lt;/div>
+                            &lt;/div>
                         </code>
                     </pre>
                 </div>
@@ -1147,11 +1058,12 @@
                 <p class="docs-intro color-blue">html结构:</p>
                 <div class="docs-code-box">
                     <pre class="pre">
-                        <code class="code">
-                            <span class="nt">&lt;div <span class="na">class=</span><span class="s">"scroll-bar scroll-horizontal"</span>&gt;</span>
-                                <span class="c">&lt;!-- 内容 --&gt;</span>
-                                <span class="nt">&lt;div&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
+                        <code class="html">
+                            &lt;div class="scroll-box scroll-bar scroll-horizontal">
+                                &lt;div class="scroll-content">
+                                    &lt;!-- 内容 -->
+                                &lt;/div>
+                            &lt;/div>
                         </code>
                     </pre>
                 </div>
@@ -1173,11 +1085,10 @@
                 <p class="docs-intro color-blue">html结构:</p>
                 <div class="docs-code-box">
                     <pre class="pre">
-                        <code class="code">
-                            <span class="nt">&lt;div <span class="na">class=</span><span class="s">"content-box"</span>&gt;</span>
-                                <span class="c">&lt;!-- 内容 --&gt;</span>
-                                <span class="nt">&lt;div&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
+                        <code class="xml">
+                            &lt;div class="content-box">
+                                &lt;!--内容-->
+                            &lt;/div>
                         </code>
                     </pre>
                 </div>
@@ -1223,27 +1134,22 @@
                 <p class="docs-intro color-blue">html结构:</p>
                 <div class="docs-code-box">
                     <pre class="pre">
-                        <code class="code">
-                            <span class="c">&lt;!-- 导航基础结构 --&gt;</span>
-                            <span class="nt">&lt;div <span class="na">class=</span><span class="s">"header-bar"</span>&gt;</span>
-                                <span class="nt">&lt;div <span class="na">class=</span><span
-                                        class="s">"site-box"</span>&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-                                <span class="nt">&lt;nav <span class="na">class=</span><span
-                                        class="s">"nav-list"</span>&gt;</span>...<span class="nt">&lt;/nav&gt;</span>
-                                <span class="nt">&lt;div <span class="na">class=</span><span
-                                        class="s">"nav-info"</span>&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-                            <span class="nt">&lt;/div&gt;</span>
+                        <code class="html">
+                            &lt;!-- 导航基础结构 -->
+                            &lt;div class="header-bar">
+                                &lt;div class="site-box">...&lt;/div>
+                                &lt;nav class="nav-list">...&lt;/nav>
+                                &lt;div class="nav-info">...&lt;/div>
+                            &lt;/div>
 
-                            <span class="c">&lt;!-- 导航列结构 --&gt;</span>
-                            <span class="nt">&lt;ul <span class="na">class=</span><span class="s">"nav-list-box"</span>&gt;</span>
-                                <span class="nt">&lt;li <span class="na">class=</span><span class="s">"nav-item"</span>&gt;</span>
-                                    <span class="nt">&lt;a <span class="na">class=</span><span class="s">"nav-box"</span> <span class="na">href=</span><span class="s">"javascript:;"</span>&gt;</span>
-                                        <span class="nt">&lt;i <span class="na">class=</span><span class="s">"icon icon-pause"</span>&gt;</span><span
-                                        class="nt">&lt;/i&gt;</span>
-                                        <span class="nt">&lt;span <span class="na">class=</span><span class="s">"nav-title"</span>&gt;</span>公共模块<span class="nt">&lt;/span&gt;</span>
-                                    <span class="nt">&lt;/a&gt;</span>
-                                <span class="nt">&lt;/li&gt;</span>
-                            <span class="nt">&lt;/ul&gt;</span>
+                            &lt;!-- 导航列结构 -->
+                            &lt;ul class="nav-list-box">
+                                &lt;li class="nav-item active">
+                                    &lt;a class="nav-box" href="javascript:;">
+                                        &lt;i class="icon icon-pause">&lt;/i>&lt;span class="nav-title">公共模块&lt;/span>
+                                    &lt;/a>
+                                &lt;/li>
+                            &lt;/ul>
                         </code>
                     </pre>
                 </div>
@@ -1275,31 +1181,23 @@
                 <p class="docs-intro color-blue">html结构:</p>
                 <div class="docs-code-box">
                     <pre class="pre">
-                        <code class="code">
-                            <span class="nt">&lt;nav <span class="na">class=</span><span class="s">"sub-menu-bar"</span>&gt;</span>
-                                <span class="nt">&lt;ul&gt;</span>
-                                    <span class="nt">&lt;li <span class="na">class=</span><span class="s">"menu-item"</span>&gt;</span>
-                                        <span class="nt">&lt;div <span class="na">class=</span><span class="s">"menu"</span>&gt;</span><span
-                                                class="nt">&lt;i <span class="na">class=</span><span class="s">"icon icon-pause"</span>&gt;</span><span class="nt">&lt;/i&gt;</span><span
-                                                class="nt">&lt;span <span class="na">class=</span><span class="s">"menu-title"</span>&gt;</span>业务管理<span
-                                                class="nt">&lt;/span&gt;</span><span class="nt">&lt;/div&gt;</span>
-                                        <span class="nt">&lt;ul <span class="na">class=</span><span class="s">"nav-item"</span>&gt;</span>
-                                            <span class="nt">&lt;li <span class="na">class=</span><span class="s">"nav-item"</span>&gt;</span>
-                                                <span class="nt">&lt;a <span class="na">class=</span><span class="s">"sub-menu"</span> <span class="na">href=</span><span class="s">"javascript:;"</span>&gt;</span>
-                                                    <span class="nt">&lt;i <span class="na">class=</span><span class="s">"ui-dot"</span>&gt;</span><span
-                                                    class="nt">&lt;/i&gt;</span><span class="nt">&lt;span&gt;</span>投顾管理<span class="nt">&lt;/span&gt;</span>
-                                                <span class="nt">&lt;/a&gt;</span>
-                                            <span class="nt">&lt;/li&gt;</span>
-                                            <span class="nt">&lt;li <span class="na">class=</span><span class="s">"nav-item"</span>&gt;</span>
-                                                <span class="nt">&lt;a <span class="na">class=</span><span class="s">"sub-menu"</span> <span class="na">href=</span><span class="s">"javascript:;"</span>&gt;</span>
-                                                    <span class="nt">&lt;i <span class="na">class=</span><span class="s">"ui-dot"</span>&gt;</span><span
-                                                        class="nt">&lt;/i&gt;</span><span class="nt">&lt;span&gt;</span>客户管理<span class="nt">&lt;/span&gt;</span>
-                                                <span class="nt">&lt;/a&gt;</span>
-                                            <span class="nt">&lt;/li&gt;</span>
-                                        <span class="nt">&lt;/ul&gt;</span>
-                                    <span class="nt">&lt;/li&gt;</span>
-                                <span class="nt">&lt;/ul&gt;</span>
-                            <span class="nt">&lt;/nav&gt;</span>
+                        <code class="html">
+                            &lt;nav class="sub-menu-bar" role="navigation">
+                                &lt;ul>
+                                    &lt;li class="menu-item">
+                                        &lt;div class="menu">&lt;i class="icon icon-pause">&lt;/i>&lt;span class="menu-title">业务管理&lt;/span>&lt;/div>
+                                        &lt;ul>
+                                         &lt;li>&lt;a class="sub-menu active" href="javascript:;">&lt;i class="ui-dot">&lt;/i>&lt;span>投顾管理&lt;/span>&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                    &lt;li  class="menu-item">
+                                        &lt;div class="menu">&lt;i class="icon icon-pause">&lt;/i>&lt;span class="menu-title">自媒体管理&lt;/span>&lt;/div>
+                                        &lt;ul>
+                                            &lt;li>&lt;a class="sub-menu" href="javascript:;">&lt;i class="ui-dot">&lt;/i>&lt;span>投顾管理&lt;/span>&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                    &lt;/li>
+                                &lt;/ul>
+                            &lt;/nav>
                         </code>
                     </pre>
                 </div>
@@ -1327,5 +1225,12 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/cloud.js"></script>
+    <script src="https://cdn.bootcss.com/highlight.js/9.9.0/highlight.min.js"></script>
+    <script>
+        hljs.configure({tabReplace: '    '});
+        hljs.initHighlightingOnLoad();
+    </script>
 </body>
 </html>
