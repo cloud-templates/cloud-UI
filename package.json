@@ -1,6 +1,6 @@
 {
   "name": "cloud-broker-ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a html and css framework for the manage business.",
   "main": "gulpfile.js",
   "keywords": [
